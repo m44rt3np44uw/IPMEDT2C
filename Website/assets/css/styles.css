@@ -10,6 +10,8 @@ body{
 .fullscreen-div{
     height: 100vh;
 }
+
+/*Alles voor de homepage*/
 #bottomText{
     position: absolute;
     bottom: 0;
@@ -102,6 +104,13 @@ body{
     height: 100%;
 }
 
+/*Tijdlijn style*/
+#tijdlijn{
+    background-color: yellow;
+}
+
+
+/*tablet resolutie dingen*/
 @media (max-width: 950px){
     #HillaryText{
         font-size: 5vw;
@@ -121,5 +130,53 @@ body{
     }
     #versus h1{
         font-size: 30px;
+    }
+}
+
+/*mobiele resolutie*/
+@media (max-width: 520px){
+    #left{
+        width: 100%;
+        height: 50%;
+    }
+    #right{
+        top: 50%;
+        width: 100%;
+        height: 50%;
+    }
+    #TrumpHome{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #ClintonHome{
+        width: 100%;
+        margin-left:0;
+    }
+    #versus{
+        height: 100px;
+        width: 100px;
+        margin-left: -50px;
+        margin-top: -50px;
+    }
+    #versus h1{
+        font-size: 40px;
+    }
+    #HillaryText{
+        left: 50%;
+        top: 50%;
+        width: 250px;
+        margin-top: -140px;
+        margin-left: -125px;
+        font-size: 40px;
+    }
+    #TrumpText{
+        right: auto;
+        left: 50%;
+        top: 50%;
+        width: 260px;
+        margin-top: 80px;
+        margin-left: -130px;
+        font-size: 40px;
     }
 }
