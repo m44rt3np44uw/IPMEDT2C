@@ -90,9 +90,9 @@
 
     // Default options for iScroll.js used when using scrollOverflow
     var iscrollOptions = {
-        scrollbars: true,
+        scrollbars: false,
         mouseWheel: true,
-        hideScrollbars: false,
+        hideScrollbars: true,
         fadeScrollbars: false,
         disableMouse: true,
         interactiveScrollbars: true

@@ -1,5 +1,6 @@
 body{
     overflow-x: hidden;
+	background-color: #ecf0f1;
 }
 
 @font-face {
@@ -105,10 +106,51 @@ body{
 }
 
 /*Tijdlijn style*/
-#tijdlijn{
-    background-color: yellow;
+#Tijdlijn{
+	display: block;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: white;
+	height: 1500px;
+	width: 5px;
+	margin-left: auto;
+	margin-right: auto;
 }
-
+ #circle {
+      width: 35px;
+      height: 35px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: #3598db;
+      border: 5px solid white;
+      margin-top: -1295px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+ #circle2 {
+      width: 35px;
+      height: 35px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: #2d3f51;
+      border: 5px solid white;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 240px;
+    }
+ #circle3 {
+      width: 35px;
+      height: 35px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: #e74d3d;
+      border: 5px solid white;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 250px;
+    }
 
 /*tablet resolutie dingen*/
 @media (max-width: 950px){
@@ -179,4 +221,5 @@ body{
         margin-left: -130px;
         font-size: 40px;
     }
+	
 }

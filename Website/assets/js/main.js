@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // Scroll weg van homepage direct naar tijdlijn
     $('#fullpage').fullpage({
-        scrollOverflow: true
+        scrollOverflow: true,
+        normalScrollElements: '#tijdlijnSection'
     });
 });
