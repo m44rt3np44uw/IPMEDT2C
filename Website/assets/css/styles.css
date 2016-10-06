@@ -1,0 +1,125 @@
+body{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Open Sans - Bold', sans-serif;
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+.fullscreen-div{
+    height: 100vh;
+}
+#bottomText{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #2d3f51;
+    z-index: 1;
+}
+    #bottomText p{
+        font-size: 25px;
+        padding-top: 10px;
+        color: white;
+        text-align: center;
+        font-family: 'Open Sans - Bold', sans-serif;
+    }
+
+#HillaryText{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    margin-top: -70px; /* 45 van onderste tekst + 25 van font-size */
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans - Bold', sans-serif;
+}
+#TrumpText{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    margin-top: -70px; /* 45 van onderste tekst + 25 van font-size */
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans - Bold', sans-serif;
+}
+#versus{
+    background-color: white;
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -60px;
+    margin-top: -105px;
+    z-index: 1;
+    text-align: center;
+}
+    #versus h1{
+        font-family: 'Open Sans - Bold', sans-serif;
+        font-size: 50px;
+        margin-top: 35px;
+    }
+
+#left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #3598db;
+}
+#right{
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e74d3d;
+}
+
+#TrumpHome{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 500px;
+    margin-right: -250px;
+    background-color: #e74d3d;
+    height: 100%;
+}
+
+#ClintonHome{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    margin-left: -250px;
+    background-color: #3598db;
+    height: 100%;
+}
+
+@media (max-width: 950px){
+    #HillaryText{
+        font-size: 5vw;
+        margin-top: -40px;
+        left: 5%;
+    }
+    #TrumpText{
+        font-size: 5vw;
+        margin-top: -40px;
+        right: 5%;
+    }
+    #versus{
+        height: 100px;
+        width: 100px;
+        margin-left: -50px;
+        margin-top: -70px;
+    }
+    #versus h1{
+        font-size: 30px;
+    }
+}
