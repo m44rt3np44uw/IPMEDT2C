@@ -1,1 +1,2 @@
+// Dit is een link naar de presentatie.
 <?php header('Location: ' . 'https://docs.google.com/presentation/d/1rmnHQcnNqHxNvUzzo3BjIReWYxtK5Do6WHGdA3cM5Tg/pub?start=false&loop=false&delayms=20000&slide=id.g176facf811_0_48');
