@@ -115,41 +115,54 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 }
- #circle {
-      width: 35px;
-      height: 35px;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      border-radius: 25px;
-      background: #3598db;
-      border: 5px solid white;
-      margin-top: -1295px;
-      margin-left: auto;
-      margin-right: auto;
+.circle{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -22.5px; /* de helft van de width + 2 * border-radius */
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: 5px solid white;
+}
+    .video{
+        background-color: red;
+        /*background-image: videologo;*/
     }
- #circle2 {
-      width: 35px;
-      height: 35px;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      border-radius: 25px;
-      background: #2d3f51;
-      border: 5px solid white;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 240px;
+    .image{
+        background-color: blue;
+        /*background-image: imagelogo;*/
     }
- #circle3 {
-      width: 35px;
-      height: 35px;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      border-radius: 25px;
-      background: #e74d3d;
-      border: 5px solid white;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 250px;
+    .article{
+        background-color: grey;
+        /*background-image: artikellogo;*/
+    }
+.squareleft{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 50px;
+    width: 40%;
+    height: 200px;
+    border: 5px solid white;
+}
+    .squareleft img{
+        height: 100%;
+    }
+
+.squareright{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    margin-right: 50px;
+    width: 40%;
+    height: 200px;
+    border: 5px solid white;
+}
+    .squareright img{
+        height: 100%;
     }
 
 /*tablet resolutie dingen*/

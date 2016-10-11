@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "date": "20-10-2015",
+      "src": "assets/img/TrumpFace.png",
+      "text": "article",
+      "from": "Trump",
+      "kind": "video"
+    },
+    {
+      "date": "21-11-2015",
+      "src": "image",
+      "text": "article",
+      "from": "Clinton",
+      "kind": "article"
+    },
+    {
+      "date": "31-12-2015",
+      "src": "image",
+      "text": "article",
+      "from": "Trump",
+      "kind": "image"
+    }
+  ]
+}
