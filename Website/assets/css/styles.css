@@ -140,7 +140,10 @@ body{
     }
     .image{
         background-color: #3598db;
-        /*background-image: imagelogo;*/
+        background-image: url(../img/imageIcon.png);
+        background-size: 75%;
+        background-repeat: no-repeat;
+        background-position: 5px;
     }
     .article{
         background-color: grey;
@@ -187,9 +190,35 @@ body{
         .squareright .kopArtikel{
             color: #3598db;
         }
+            /*driehoekding*/
+            .squareright .textArtikel:after{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 25px 0 25px 25px;
+                border-color: transparent transparent transparent #ffffff;
+                top: 0;
+                right: 0;
+                margin-right: -15px;
+            }
         .squareleft .kopArtikel{
             color: #e74d3d;
         }
+            /*driehoekding*/
+            .squareleft .textArtikel:after{
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 25px 25px 25px 0;
+                border-color: transparent #ffffff transparent transparent;
+                top: 0;
+                left: 0;
+                margin-left: -15px;
+            }
     .textArtikel{
         max-width: 100%;
         font-size: 12px;
@@ -198,7 +227,8 @@ body{
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 15px;
-        line-height: 20px;
+        padding-top: 5px;
+        line-height: 15px;
         font-family: 'Open Sans - Regular', sans-serif;
     }
 
