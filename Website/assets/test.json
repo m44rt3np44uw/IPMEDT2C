@@ -2,24 +2,27 @@
   "data": [
     {
       "date": "20-10-2015",
-      "src": "assets/img/TrumpFace.png",
-      "text": "article",
+      "src": "assets/img/Trump.jpg",
+      "koptext": "Trump verlaat de Republikeinse partij",
+      "subtext": "Trump is het vooral oneens met de Republikeinse belastingsplannen en buitenlandpolitiek.",
       "from": "Trump",
-      "kind": "video"
+      "kind": "image"
     },
     {
       "date": "21-11-2015",
-      "src": "image",
-      "text": "article",
+      "src": "assets/img/Clinton.jpg",
+      "koptext": "Hillary Clinton stelt zich officieel presidentskandidaat",
+      "subtext": "Gewone Amerikanen hebben iemand nodig die voor hen opkomt, zegt ze daarin.",
       "from": "Clinton",
-      "kind": "article"
+      "kind": "video"
     },
     {
-      "date": "31-12-2015",
-      "src": "image",
-      "text": "article",
+      "date": "01-11-2016",
+      "src": "",
+      "koptext": "Trump verlaat de Republikeinse partij",
+      "subtext": "Trump is het vooral oneens met de Republikeinse belastingsplannen en buitenlandpolitiek.",
       "from": "Trump",
-      "kind": "image"
+      "kind": "article"
     }
   ]
 }
