@@ -10,7 +10,7 @@ $(document).ready(function () {
         var currentId = $(this).attr("data-id");
 
         search(currentId);
-        
+
         //open popup
 
         //laad artikel in popup dmv id
@@ -63,8 +63,4 @@ function search(currentId) {
         });
 
     });
-}
-
-function articleLoad() {
-    
 }
