@@ -1,9 +1,16 @@
+var datum;
+var image;
+var headline;
+var article;
+var person;
+var medium;
 $(document).ready(function () {
 
     $("#Tijdlijn").delegate("a", "click", function () {
         var currentId = $(this).attr("data-id");
-        search(currentId);
 
+        search(currentId);
+        
         //open popup
 
         //laad artikel in popup dmv id
@@ -26,15 +33,38 @@ function search(currentId) {
                         }
                     }
                     if (deGoedeID){
-                        if(key == "date"){
-                            console.log(val);
-                            deGoedeID = false;
+                        // waardes inladen naar variables
+                        switch (key){
+                            case "date":
+                                datum = val;
+                                break;
+                            case "src":
+                                image = val;
+                                break;
+                            case "koptext":
+                                headline = val;
+                                break;
+                            case "subtext":
+                                article = val;
+                                break;
+                            case "from":
+                                person = val;
+                                break;
+                            case "kind":
+                                medium = val;
+                                deGoedeID = false;
+                                break;
+
+                            //bron nog toevoegen
                         }
-                        //ook voor text en hoofdtext en images enzovoort
                     }
                 });
             });
         });
 
     });
+}
+
+function articleLoad() {
+    
 }
