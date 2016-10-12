@@ -49,23 +49,34 @@ $(document).ready(function() {
                     if(key === "subtext"){
                         subtext = val;
                     }
+                    if(key === "belangrijk") {
+                        if(val === 1) {
+                            from = 3; //beide
+                        }
+                    }
                     if(key === "kind") {
-                        console.log(dag);
-
                         // per dag is 10 margin-top
                         items.push("<div id='" + "circle" + id + "' class='" + "circle " + val + "' style='" + "margin-top: " + dag*10 + "px" + "'></div>");
                         if(from === 1) {
-                            items.push("<div id='" + "square" + id + "' class='" + "squareleft " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
+                            items.push("<div id='" + "square" + id + "' class='" + "squareright " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
                                 "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
-                                "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p></div>" +
+                                "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
                                 "<img src='" + src + "' />" +
                                 "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
                                 "</div>");
                         }
                         if(from === 2){
-                            items.push("<div id='" + "square" + id + "' class='" + "squareright " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
+                            items.push("<div id='" + "square" + id + "' class='" + "squareleft " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
                                 "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
-                                "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p></div>" +
+                                "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
+                                "<img src='" + src + "' />" +
+                                "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
+                                "</div>");
+                        }
+                        if(from === 3){
+                            items.push("<div id='" + "square" + id + "' class='" + "squarecenter " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
+                                "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
+                                "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
                                 "<img src='" + src + "' />" +
                                 "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
                                 "</div>");
