@@ -1,0 +1,42 @@
+var data = {
+    "id0":{
+        "id": 0,
+        "date": "20-10-2015",
+        "src": "assets/img/Trump.jpg",
+        "koptext": "Trump verlaat de Republikeinse partij",
+        "subtext": "Trump is het vooral oneens met de Republikeinse belastingsplannen en buitenlandpolitiek.",
+        "from": "Trump",
+        "belangrijk":0,
+        "kind": "image"
+    },
+    "id1":{
+        "id": 1,
+        "date": "21-11-2015",
+        "src": "assets/img/Clinton.jpg",
+        "koptext": "Hillary Clinton stelt zich officieel presidentskandidaat",
+        "subtext": "Gewone Amerikanen hebben iemand nodig die voor hen opkomt, zegt ze daarin.",
+        "from": "Clinton",
+        "belangrijk":0,
+        "kind": "video"
+    },
+    "id2":{
+        "id": 2,
+        "date": "01-12-2015",
+        "src": "",
+        "koptext": "Trump verlaat de Republikeinse partij",
+        "subtext": "Trump is het vooral oneens met de Republikeinse belastingsplannen en buitenlandpolitiek.",
+        "from": "Trump",
+        "belangrijk":0,
+        "kind": "article"
+    },
+    "id3":{
+        "id": 3,
+        "date": "01-01-2016",
+        "src": "assets/img/SuperTuesday.jpg",
+        "koptext": "'Super Tuesday'",
+        "subtext": "Bekijk hier de uitslag van 'Super Tuesday'",
+        "from": "Both",
+        "belangrijk":1,
+        "kind": "image"
+    }
+}
