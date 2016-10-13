@@ -48,7 +48,7 @@ function fill(id) {
         items.push("<div id='" + "square" + id + "' class='" + "squareleft " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
             "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
             "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
-            "<img src='" + src + "' />" +
+            "<video src='" + src + "' + controls />" +
             "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
             "</div>");
     }

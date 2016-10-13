@@ -12,7 +12,7 @@ var data = {
     "id1":{
         "id": 1,
         "date": "21-11-2015",
-        "src": "assets/img/Clinton.jpg",
+        "src": "assets/img/TestVideo.mp4",
         "koptext": "Hillary Clinton stelt zich officieel presidentskandidaat",
         "subtext": "Gewone Amerikanen hebben iemand nodig die voor hen opkomt, zegt ze daarin.",
         "from": "Clinton",
