@@ -110,6 +110,44 @@ body{
 }
 
 /*Tijdlijn style*/
+#topNav{
+    position:fixed;
+    top: -45px;
+    width:100%;
+    height: 45px;
+    z-index: 1;
+}
+    #clintonNav{
+        width: 50%;
+        float:left;
+        text-align: center;
+        height: 45px;
+        background: rgba(53,152,219,1);
+        background: -moz-linear-gradient(top, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(53,152,219,1)), color-stop(90%, rgba(53,152,219,0.2)), color-stop(100%, rgba(53,152,219,0)));
+        background: -webkit-linear-gradient(top, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
+        background: -o-linear-gradient(top, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
+        background: -ms-linear-gradient(top, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
+        background: linear-gradient(to bottom, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3598db', endColorstr='#3598db', GradientType=0 );
+        padding-top: 10px;
+    }
+    #trumpNav{
+        width: 50%;
+        float:right;
+        text-align: center;
+        height: 45px;
+        background: rgba(231,77,61,1);
+        background: -moz-linear-gradient(top, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(231,77,61,1)), color-stop(90%, rgba(231,77,61,0.2)), color-stop(100%, rgba(53,152,219,0)));
+        background: -webkit-linear-gradient(top, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
+        background: -o-linear-gradient(top, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
+        background: -ms-linear-gradient(top, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
+        background: linear-gradient(to bottom, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e74d3d', endColorstr='#3598db', GradientType=0 );
+        padding-top: 10px;
+    }
+
 #Tijdlijn{
 	display: block;
 	border: 1px solid rgba(0, 0, 0, 0.1);
