@@ -112,7 +112,7 @@ body{
 /*Tijdlijn style*/
 #topNav{
     position:fixed;
-    top: -45px;
+    top: -60px;
     width:100%;
     height: 45px;
     z-index: 1;
@@ -122,30 +122,28 @@ body{
         float:left;
         text-align: center;
         height: 45px;
-        background: rgba(53,152,219,1);
-        background: -moz-linear-gradient(top, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(53,152,219,1)), color-stop(90%, rgba(53,152,219,0.2)), color-stop(100%, rgba(53,152,219,0)));
-        background: -webkit-linear-gradient(top, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
-        background: -o-linear-gradient(top, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
-        background: -ms-linear-gradient(top, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
-        background: linear-gradient(to bottom, rgba(53,152,219,1) 50%, rgba(53,152,219,0.2) 90%, rgba(53,152,219,0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3598db', endColorstr='#3598db', GradientType=0 );
+        background: #3598db; /* Old browsers */
+        background: -moz-linear-gradient(top, #3598db 0%, #3598db 30%, #ecf0f1 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #3598db 0%,#3598db 30%,#ecf0f1 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #3598db 0%,#3598db 30%,#ecf0f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3598db', endColorstr='#ecf0f1',GradientType=0 ); /* IE6-9 */
         padding-top: 10px;
+        color: #ecf0f1;
+        font-family: 'Open Sans - Regular', sans-serif;
     }
     #trumpNav{
         width: 50%;
         float:right;
         text-align: center;
         height: 45px;
-        background: rgba(231,77,61,1);
-        background: -moz-linear-gradient(top, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(231,77,61,1)), color-stop(90%, rgba(231,77,61,0.2)), color-stop(100%, rgba(53,152,219,0)));
-        background: -webkit-linear-gradient(top, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
-        background: -o-linear-gradient(top, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
-        background: -ms-linear-gradient(top, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
-        background: linear-gradient(to bottom, rgba(231,77,61,1) 50%, rgba(231,77,61,0.2) 90%, rgba(53,152,219,0) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e74d3d', endColorstr='#3598db', GradientType=0 );
+        background: #e74d3d; /* Old browsers */
+        background: -moz-linear-gradient(top, #e74d3d 0%, #e74d3d 30%, #ecf0f1 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #e74d3d 0%,#e74d3d 30%,#ecf0f1 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #e74d3d 0%,#e74d3d 30%,#ecf0f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e74d3d', endColorstr='#ecf0f1',GradientType=0 ); /* IE6-9 */
         padding-top: 10px;
+        color: #ecf0f1;
+        font-family: 'Open Sans - Regular', sans-serif;
     }
 
 #Tijdlijn{
@@ -160,6 +158,24 @@ body{
     -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
 }
+#tijdlijnBegin{
+    padding-top: 60px;
+    color: grey;
+    font-family: "Open Sans - Regular", sans-serif;
+    border-bottom: 5px solid white;
+    background-color: white;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+
+}
+    #tijdlijnBegin p{
+        padding-bottom: 20px;
+    }
 .circle{
     position: absolute;
     top: 0;

@@ -12,12 +12,12 @@ $(document).ready(function() {
             if(index == 1 && direction =='down'){
                 $( "#topNav" ).animate({
                     top: "0"
-                }, 600 );
+                }, 1500 );
             }
             else if(index == 2 && direction == 'up'){
                 $( "#topNav" ).animate({
-                    top: "-45px"
-                }, 600 );
+                    top: "-60px"
+                }, 400 );
             }
         }
     });
