@@ -48,7 +48,7 @@ function fill(id) {
         items.push("<div id='" + "square" + id + "' class='" + "squareleft " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
             "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
             "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
-            "<video src='" + src + "' + controls />" +
+            "<img src='" + src + "' />" +
             "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
             "</div>");
     }
@@ -86,8 +86,8 @@ function getDag(id) {
     //maak dagen van maanden
     maand = maand * 30;
     dag = dag + maand;
-    //tijdlijn begint bij 1 oktober 2015 = 301 dagen
-    dag = dag - 301;
+    //tijdlijn begint bij 1 april 2015 = 120 dagen ongeveer
+    dag = dag - 120;
     //compenseer voor 2016 datums
     if(jaar === 2016){
         dag = dag + 365;
@@ -125,7 +125,17 @@ function getSrc(id) {
                 for (var prop in obj) {
                     if (prop == "src") {
                         if(obj.hasOwnProperty(prop)){
+                            if (obj[prop] == "video"){
+                                var thumbnail = true;
+                            }
                             src = obj[prop];
+                        }
+                    }
+                    if(thumbnail = true) {
+                        if (prop == "thumbnail") {
+                            if (obj.hasOwnProperty(prop)) {
+                                src = obj[prop];
+                            }
                         }
                     }
                 }
