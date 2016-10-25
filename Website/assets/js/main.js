@@ -12,7 +12,7 @@ $(document).ready(function() {
             if(index == 1 && direction =='down'){
                 $( "#topNav" ).animate({
                     top: "0"
-                }, 1500 );
+                }, 1300 );
             }
             else if(index == 2 && direction == 'up'){
                 $( "#topNav" ).animate({

@@ -121,29 +121,23 @@ body{
         width: 50%;
         float:left;
         text-align: center;
-        height: 45px;
-        background: #3598db; /* Old browsers */
-        background: -moz-linear-gradient(top, #3598db 0%, #3598db 30%, #ecf0f1 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #3598db 0%,#3598db 30%,#ecf0f1 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #3598db 0%,#3598db 30%,#ecf0f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3598db', endColorstr='#ecf0f1',GradientType=0 ); /* IE6-9 */
+        height: 40px;
+        background: #3598db;
         padding-top: 10px;
         color: #ecf0f1;
         font-family: 'Open Sans - Regular', sans-serif;
+        font-size: 25px;
     }
     #trumpNav{
         width: 50%;
         float:right;
         text-align: center;
-        height: 45px;
-        background: #e74d3d; /* Old browsers */
-        background: -moz-linear-gradient(top, #e74d3d 0%, #e74d3d 30%, #ecf0f1 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #e74d3d 0%,#e74d3d 30%,#ecf0f1 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #e74d3d 0%,#e74d3d 30%,#ecf0f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e74d3d', endColorstr='#ecf0f1',GradientType=0 ); /* IE6-9 */
+        height: 40px;
+        background: #e74d3d;
         padding-top: 10px;
         color: #ecf0f1;
         font-family: 'Open Sans - Regular', sans-serif;
+        font-size: 25px;
     }
 
 #Tijdlijn{
@@ -159,7 +153,7 @@ body{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
 }
 #tijdlijnBegin{
-    padding-top: 60px;
+    padding-top: 55px;
     color: grey;
     font-family: "Open Sans - Regular", sans-serif;
     border-bottom: 5px solid white;
@@ -174,7 +168,7 @@ body{
 
 }
     #tijdlijnBegin p{
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
 .circle{
     position: absolute;
