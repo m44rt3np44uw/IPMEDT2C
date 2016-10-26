@@ -1,9 +1,4 @@
-var datum;
-var image;
-var headline;
-var article;
-var person;
-var medium;
+
 $(document).ready(function () {
 
     $("#Tijdlijn").delegate("a", "click", function () {
@@ -12,7 +7,8 @@ $(document).ready(function () {
         search(currentId);
 
         //open popup
-
+        $("#Tijdlijn").append("<div id='modal'></div>");
+        console.log("test")
         //laad artikel in popup dmv id
 
         //laad foto's enzovoort...
