@@ -15,12 +15,61 @@ $(document).ready(function() {
         getFrom(currentId);
         getKind(currentId);
 
-        //open popup
+        // hier word de pop-up in de html toegevoegd
+        $("body").prepend(
+            $("<div id='modal'>"+ fill_popup() + "</div>").hide().fadeIn('slow')
+        );
 
-        //laad artikel in popup dmv id
+        if(from == 'Clinton'){
+            console.log("2")
+            $(".modal-article").find("h1").css("color","#3598db");
+        } else if (from == 'Trump') {
+            console.log("1")
+            $(".modal-article").find("h1").css("color","#e74d3d");
+        } else {
+            //veranderen?
+            console.log("3")
+            $(".modal-article").find("h1").css("color","grey");
+        }
 
-        //laad foto's enzovoort...
+        // hier word de pop-up met content gevuld
+        function fill_popup(){
+            var string = $("#modal").innerHTML =
+                "<div class='modal-content'>" +
+                    "<span class='close'>x</span>" +
+                    "<img src='" + src + "' />"+
+                    "<div class='modal-article'> " +
+                        "<h1>" + koptext + "</h1>" +
+                        "<p>" + subtext + "</p>"+
+                    "</div>" +
+                "</div>";
+            return string;
+        }
 
+
+        // Close Pop-up
+
+        $("#modal").click(handler).find("#modal");
+        $("#modal").click(handler).find(".close");
+
+        function handler(event){
+            var target = $(event.target);
+            if (target.is(".close")){
+                $("#modal").fadeOut(300, function() {$(this).remove()});
+            }
+            else if (target.is("#modal") && target != $(".modal-content")){
+                $("#modal").fadeOut(300, function() {$(this).remove()});
+            }
+        }
+
+
+        // $("#modal").click('blur', function() {
+        //    $(this).fadeOut(300);
+        // });
+        //
+        // $(".close").click( function() {
+        //     $("#modal").remove();
+        // })
     });
 });
 
