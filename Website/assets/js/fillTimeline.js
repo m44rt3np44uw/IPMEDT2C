@@ -11,9 +11,9 @@ $(document).ready(function() {
         //haal alle variabelen op uit de file
         getDag(currentId);
         getText(currentId);
+        getKind(currentId);
         getSrc(currentId);
         getFrom(currentId);
-        getKind(currentId);
 
         // hier word de pop-up in de html toegevoegd
         $("body").prepend(
@@ -77,16 +77,16 @@ $(document).ready(function() {
 function fill(id) {
     getDag(id);
     getText(id);
+    getKind(id);
     getSrc(id);
     getFrom(id);
-    getKind(id);
 
     var items = [];
 
     // per dag is 10 margin-top
-    items.push("<div id='" + "circle" + id + "' class='" + "circle " + kind + "' style='" + "margin-top: " + dag*10 + "px" + "'></div>");
+    items.push("<div id='" + "circle" + id + "' class='" + "circle " + kind + "' style='" + "margin-top: " + dag*25 + "px" + "'></div>");
     if(from === "Trump") {
-        items.push("<div id='" + "square" + id + "' class='" + "squareright " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
+        items.push("<div id='" + "square" + id + "' class='" + "squareright " + "' style='" + "margin-top: " + dag * 25 + "px" + "'>" +
             "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
             "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
             "<img src='" + src + "' />" +
@@ -94,7 +94,7 @@ function fill(id) {
             "</div>");
     }
     if(from === "Clinton"){
-        items.push("<div id='" + "square" + id + "' class='" + "squareleft " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
+        items.push("<div id='" + "square" + id + "' class='" + "squareleft " + "' style='" + "margin-top: " + dag * 25 + "px" + "'>" +
             "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
             "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
             "<img src='" + src + "' />" +
@@ -102,7 +102,7 @@ function fill(id) {
             "</div>");
     }
     if(from === "Both"){
-        items.push("<div id='" + "square" + id + "' class='" + "squarecenter " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
+        items.push("<div id='" + "square" + id + "' class='" + "squarecenter " + "' style='" + "margin-top: " + dag * 25 + "px" + "'>" +
             "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
             "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
             "<img src='" + src + "' />" +
@@ -172,16 +172,17 @@ function getSrc(id) {
             if (data.hasOwnProperty(key)) {
                 var obj = data[key];
                 for (var prop in obj) {
-                    if (prop == "src") {
-                        if(obj.hasOwnProperty(prop)){
-                            if (obj[prop] == "video"){
-                                var thumbnail = true;
-                            }
-                            src = obj[prop];
-                        }
-                    }
-                    if(thumbnail = true) {
+                    if (kind == "video"){
+                        //als het een video is haal de thumbnail op.
                         if (prop == "thumbnail") {
+                            console.log("video");
+                            if(obj.hasOwnProperty(prop)){
+                                src = obj[prop];
+                            }
+                        }
+                    } else {
+                        if (prop == "src") {
+                            console.log("geen video");
                             if (obj.hasOwnProperty(prop)) {
                                 src = obj[prop];
                             }
