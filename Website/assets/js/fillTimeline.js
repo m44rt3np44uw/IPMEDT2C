@@ -51,15 +51,30 @@ $(document).ready(function () {
 
         // hier word de pop-up met content gevuld
         function fill_popup() {
-            var string = $("#modal").innerHTML =
-                "<div class='modal-content'>" +
-                "<span class='close'>x</span>" +
-                "<img src='" + src + "' />" +
-                "<div class='modal-article'> " +
-                "<h1>" + koptext + "</h1>" +
-                "<p>" + subtext + "</p>" +
-                "</div>" +
-                "</div>";
+            if(kind == "image") {
+                var string = $("#modal").innerHTML =
+                    "<div class='modal-content'>" +
+                    "<span class='close'>x</span>" +
+                    "<img src='" + src + "' />" +
+                    "<div class='modal-article'> " +
+                    "<h1>" + koptext + "</h1>" +
+                    "<p>" + subtext + "</p>" +
+                    "</div>" +
+                    "</div>";
+            }
+            else if(kind == "video"){
+                var string = $("#modal").innerHTML =
+                    "<div class='modal-content'>" +
+                    "<span class='close'>x</span>" +
+                    "<video src='" + videosrc + "' + controls/>" +
+                    "<div class='modal-article'> " +
+                    "<h1>" + koptext + "</h1>" +
+                    "<p>" + subtext + "</p>" +
+                    "</div>" +
+                    "</div>";
+            }
+
+
             return string;
         }
 
@@ -171,6 +186,11 @@ function getSrc(id) {
                         if (prop == "thumbnail") {
                             if (obj.hasOwnProperty(prop)) {
                                 src = obj[prop];
+                            }
+                        }
+                        if (prop == "src") {
+                            if(obj.hasOwnProperty(prop)) {
+                                videosrc = obj[prop];
                             }
                         }
                     } else {

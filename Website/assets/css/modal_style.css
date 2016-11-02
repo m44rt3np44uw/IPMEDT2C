@@ -46,6 +46,7 @@
     position: absolute;
     top: 0;
     right: 10px;
+    z-index: 1;
 }
 
 .close:hover,
@@ -53,6 +54,10 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+video{
+    width: 100%;
 }
 
 /*tablet resolutie dingen*/
