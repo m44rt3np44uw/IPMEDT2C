@@ -1,0 +1,2 @@
+// Enable progressbar.
+scrollProgress.set();

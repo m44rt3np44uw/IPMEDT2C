@@ -1,0 +1,94 @@
+/*FOOTER*/
+footer {
+    color: #ECF0F1;
+    background-color: #2980B9;
+    padding-bottom: 75px;
+    padding-top: 75px;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    font-weight: 100;
+    line-height: 150%;
+}
+footer .kolom-4 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+footer .ons h4 {
+    font-weight: bolder;
+}
+footer .ons table {
+    width: 100%;
+}
+footer .social {
+    text-align: center;
+}
+footer .social p:first-of-type {
+    margin-bottom: 10px;
+}
+footer .social .twitter {
+    background-color: #3498DB;
+    border-color: #3498DB !important;
+}
+footer .social .twitter:hover svg path {
+    fill: #3498DB;
+}
+footer .social .facebook {
+    background-color: #2C3E50;
+    border-color: #2C3E50 !important;
+}
+footer .social .facebook:hover svg path {
+    fill: #2C3E50;
+}
+footer .social .twitter, footer .social .facebook {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    color: inherit;
+    display: inline-block;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    border: solid thin;
+}
+footer .social .twitter:hover, footer .social .facebook:hover {
+    background-color: transparent;
+}
+footer .nos {
+    text-align: right;
+}
+footer .nos p:last-of-type {
+    margin-top: 20px;
+}
+footer p:first-of-type {
+    margin-top: 0;
+}
+footer p a, footer td a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: 400;
+}
+footer p a:hover, footer td a:hover {
+    text-decoration: underline;
+}
+
+/* OMHOOG */
+#omhoog {
+    margin-top: 100px;
+}
+#omhoog .kolom-6:first-of-type svg {
+    height: 100px;
+}
+#omhoog .kolom-6:first-of-type svg .st0 {
+    fill: #E7372A;
+}
+#omhoog .kolom-6:last-of-type {
+    text-align: right;
+}
+#omhoog .kolom-6:last-of-type svg {
+    cursor: pointer;
+    margin-top: 25px;
+    height: 50px;
+}
+#omhoog .kolom-6:last-of-type svg:hover path {
+    fill: #2C3E50;
+}

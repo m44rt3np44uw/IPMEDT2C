@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 75%;
+}
+
+.kolom-1 {width: 8.33%;}
+.kolom-2 {width: 16.66%;}
+.kolom-3 {width: 25%;}
+.kolom-4 {width: 33.33%;}
+.kolom-5 {width: 41.66%;}
+.kolom-6 {width: 50%;}
+.kolom-7 {width: 58.33%;}
+.kolom-8 {width: 66.66%;}
+.kolom-9 {width: 75%;}
+.kolom-10 {width: 83.33%;}
+.kolom-11 {width: 91.66%;}
+.kolom-12 {width: 100%;}
+
+[class*="kolom-"] {
+    float: left;
+    padding: 5px;
+}
+
+.rij::after {
+    content: "";
+    clear: both;
+    display: block;
+}
