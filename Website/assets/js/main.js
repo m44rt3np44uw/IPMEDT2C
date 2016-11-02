@@ -25,12 +25,9 @@ $(document).ready(function() {
     // Scroll de pagina terug omhoog.
     $('.ga-omhoog').on('click', function (e) {
 
-        // Link werkt hierdoor niet meer.
-        e.preventDefault();
+        // Scroll omhoog.
+        // TODO: tijdelijk
+        location.reload();
 
-        // Scroll omhoog smooth.
-        $("html, body").animate({
-            scrollTop: 0
-        });
     });
 });
