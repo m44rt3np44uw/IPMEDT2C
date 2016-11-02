@@ -1,8 +1,12 @@
 $(document).ready(function() {
+    moment.locale('nl');
+
+    dagOld = 0;
+    from = 0;
+    idOld = 0;
     for (var key in data) {
         var id = key;
         fill(id);
-
     }
 
     $("#Tijdlijn").delegate("a", "click", function () {
@@ -83,32 +87,16 @@ function fill(id) {
 
     var items = [];
 
-    // per dag is 10 margin-top
-    items.push("<div id='" + "circle" + id + "' class='" + "circle " + kind + "' style='" + "margin-top: " + dag*25 + "px" + "'></div>");
-    if(from === "Trump") {
-        items.push("<div id='" + "square" + id + "' class='" + "squareright " + "' style='" + "margin-top: " + dag * 25 + "px" + "'>" +
-            "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
-            "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
-            "<img src='" + src + "' />" +
-            "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
-            "</div>");
-    }
-    if(from === "Clinton"){
-        items.push("<div id='" + "square" + id + "' class='" + "squareleft " + "' style='" + "margin-top: " + dag * 25 + "px" + "'>" +
-            "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
-            "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
-            "<img src='" + src + "' />" +
-            "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
-            "</div>");
-    }
-    if(from === "Both"){
-        items.push("<div id='" + "square" + id + "' class='" + "squarecenter " + "' style='" + "margin-top: " + dag * 25 + "px" + "'>" +
-            "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
-            "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
-            "<img src='" + src + "' />" +
-            "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
-            "</div>");
-    }
+    items.push("<div class='" + "cd-timeline-block" + "'>" +
+        "<div class='" + "cd-timeline-img " + kind + " " + from + "'></div>" +
+        "<div class='" + "cd-timeline-content " + from + "'>" +
+            "<img class='artikelimg' src='"+ src +"' />" +
+            "<h2>'" + koptext + "'</h2>" +
+            "<p>'" + subtext + "'</p>" +
+            "<a data-id='" + id + "' class='" + "cd-read-more" + "'>Lees meer</a>" +
+            "<span class='" + "cd-date" + "'>" + moment(date, "DD-MM-YYYY").format("LL") + "</span>" +
+        "</div>" +
+    "</div>");
 
     $('#Tijdlijn').append(items);
 }
@@ -127,19 +115,6 @@ function getDag(id) {
                 }
             }
         }
-    }
-    var res = date.split("-", 3); //split datum in dag, maand en jaar
-    dag = parseInt(res[0]);
-    var maand = parseInt(res[1]);
-    var jaar = parseInt(res[2]);
-    //maak dagen van maanden
-    maand = maand * 30;
-    dag = dag + maand;
-    //tijdlijn begint bij 1 april 2015 = 120 dagen ongeveer
-    dag = dag - 120;
-    //compenseer voor 2016 datums
-    if(jaar === 2016){
-        dag = dag + 365;
     }
 }
 
@@ -175,14 +150,12 @@ function getSrc(id) {
                     if (kind == "video"){
                         //als het een video is haal de thumbnail op.
                         if (prop == "thumbnail") {
-                            console.log("video");
                             if(obj.hasOwnProperty(prop)){
                                 src = obj[prop];
                             }
                         }
                     } else {
                         if (prop == "src") {
-                            console.log("geen video");
                             if (obj.hasOwnProperty(prop)) {
                                 src = obj[prop];
                             }

@@ -35,8 +35,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2090101-trump-en-clinton-zijn-de-grote-winnaars-van-super-tuesday.html"
     },
-    "id4":{
-        "id": 4,
+    "id3":{
+        "id": 3,
         "date": "19-5-2015",
         "src": "assets/img/clinton/Clinton5.jpg",
         "thumbnail": "",
@@ -47,8 +47,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2036625-hillary-clinton-e-mails-moeten-snel-worden-vrijgegeven.html"
     },
-    "id5":{
-        "id": 5,
+    "id4":{
+        "id": 4,
         "date": "13-6-2015",
         "src": "assets/img/clinton/Clinton.jpg",
         "thumbnail": "",
@@ -59,8 +59,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2041205-hillary-clinton-belooft-te-strijden-voor-middenklasse.html"
     },
-    "id7":{
-        "id": 7,
+    "id5":{
+        "id": 5,
         "date": "24-7-2015",
         "src": "assets/img/clinton/Clinton3.jpg",
         "thumbnail": "",
@@ -71,8 +71,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2048641-toch-vertrouwelijke-informatie-op-privemail-clinton.html"
     },
-    "id9":{
-        "id": 9,
+    "id6":{
+        "id": 6,
         "date": "14-10-2015",
         "src": "assets/img/clinton/Clinton&Sanders.jpg",
         "thumbnail": "",
@@ -83,8 +83,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2062997-clinton-en-sanders-voeren-boventoon-in-democratisch-debat.html"
     },
-    "id10":{
-        "id": 10,
+    "id7":{
+        "id": 7,
         "date": "17-01-2016",
         "src": "assets/img/clinton/Clinton&Sanders2.jpg",
         "thumbnail": "",
@@ -95,8 +95,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2081093-clinton-vs-sanders-de-strijd-wordt-harder.html"
     },
-    "id12":{
-        "id": 12,
+    "id8":{
+        "id": 8,
         "date": "2-2-2016",
         "src": "assets/img/clinton/Clinton7.jpg",
         "thumbnail": "",
@@ -107,8 +107,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2084527-hillary-clinton-wint-iowa-met-miniem-verschil.html"
     },
-    "id15":{
-        "id": 15,
+    "id9":{
+        "id": 9,
         "date": "16-03-2016",
         "src": "assets/img/Voorverkiezingen15maart.jpg",
         "thumbnail": "",
@@ -119,8 +119,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2093045-clinton-bouwt-voorsprong-op-sanders-verder-uit.html"
     },
-    "id17":{
-        "id": 17,
+    "id10":{
+        "id": 10,
         "date": "20-04-2016",
         "src": "assets/img/Voorverkiezingen19april.jpg",
         "thumbnail": "",
@@ -131,8 +131,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2100286-trump-en-clinton-winnen-in-new-york.html"
     },
-    "id18":{
-        "id": 18,
+    "id11":{
+        "id": 11,
         "date": "25-05-2016",
         "src": "assets/img/clinton/Clinton6.jpg",
         "thumbnail": "",
@@ -143,8 +143,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2107238-terug-van-weggeweest-hillary-clintons-e-mailschandaal.html"
     },
-    "id20":{
-        "id": 20,
+    "id12":{
+        "id": 12,
         "date": "14-06-2016",
         "src": "assets/img/Navoorverkiezingen.jpg",
         "thumbnail": "",
@@ -155,8 +155,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2111172-hillary-clinton-wint-laatste-democratische-voorverkiezing.html"
     },
-    "id21":{
-        "id": 21,
+    "id13":{
+        "id": 13,
         "date": "12-07-2016",
         "src": "assets/img/clinton/Sanders&Clinton.jpg",
         "thumbnail": "",
