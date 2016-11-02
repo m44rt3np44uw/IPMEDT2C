@@ -1,33 +1,39 @@
-$(document).ready(function() {
-    // Scroll weg van homepage direct naar tijdlijn
-    $('#fullpage').fullpage({
-        scrollOverflow: true,
-        normalScrollElements: '#tijdlijnSection',
+$(document).ready(function () {
 
-        //voor de bovennav die tevoorschijn komt bij de tweede sectie
-        onLeave: function(index, nextIndex, direction){
-            var leavingSection = $(this);
+    // Timeline ready
+    $(document).on('timeline-ready', function () {
 
-            //after leaving section 1
-            if(index == 1 && direction =='down'){
-                $( "#topNav" ).animate({
-                    top: "0"
-                }, 1300 );
+        // Scroll weg van homepage direct naar tijdlijn
+        $('#fullpage').fullpage({
+            scrollOverflow: true,
+            normalScrollElements: '#tijdlijnSection',
+
+            //voor de bovennav die tevoorschijn komt bij de tweede sectie
+            onLeave: function (index, nextIndex, direction) {
+                var leavingSection = $(this);
+
+                //after leaving section 1
+                if (index == 1 && direction == 'down') {
+                    $("#topNav").animate({
+                        top: "0"
+                    }, 1300);
+                }
+                else if (index == 2 && direction == 'up') {
+                    $("#topNav").animate({
+                        top: "-60px"
+                    }, 400);
+                }
             }
-            else if(index == 2 && direction == 'up'){
-                $( "#topNav" ).animate({
-                    top: "-60px"
-                }, 400 );
-            }
-        }
+        });
+
+        // Scroll de pagina terug omhoog.
+        $('.ga-omhoog').on('click', function () {
+
+            // Scroll omhoog.
+            // TODO: tijdelijk
+            location.reload();
+
+        });
     });
 
-    // Scroll de pagina terug omhoog.
-    $('.ga-omhoog').on('click', function (e) {
-
-        // Scroll omhoog.
-        // TODO: tijdelijk
-        location.reload();
-
-    });
 });

@@ -302,7 +302,7 @@
     }
     .Both {
         width: 100%;
-        padding-right: 33px;
+        /*padding-right: 33px;*/
     }
     .Both.cd-timeline-content::before{
         display: none;
