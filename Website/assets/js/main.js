@@ -10,25 +10,27 @@ $(document).ready(function () {
 
             //voor de bovennav die tevoorschijn komt bij de tweede sectie
             onLeave: function (index, nextIndex, direction) {
-                var leavingSection = $(this);
+
+                var $topNav = $('#topNav'),
+                    $filter = $('.filter');
 
                 //after leaving section 1
                 if (index == 1 && direction == 'down') {
-                    $("#topNav").animate({
+                    $topNav.animate({
                         top: "0"
                     }, 1300);
 
-                    $('.filter').animate({
+                    $filter.animate({
                         right: "25px",
                         bottom: "35px"
                     });
                 }
                 else if (index == 2 && direction == 'up') {
-                    $("#topNav").animate({
+                    $topNav.animate({
                         top: "-60px"
                     }, 400);
 
-                    $('.filter').animate({
+                    $filter.animate({
                         right: "-75px",
                         bottom: "-75px"
                     });
