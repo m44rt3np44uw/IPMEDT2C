@@ -119,7 +119,7 @@ function fill(id) {
 
     var items = [];
 
-    items.push("<div class='" + "cd-timeline-block" + "'>" +
+    items.push("<div class='" + "cd-timeline-block" + " filter-" + from.toLowerCase() + "'>" +
         "<div class='" + "cd-timeline-img " + kind + " " + from + "'></div>" +
         "<div class='" + "cd-timeline-content " + from + "'>" +
         "<div class='imageding'>" +

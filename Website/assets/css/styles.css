@@ -16,6 +16,14 @@ body{
     font-family: 'Open Sans - Regular', sans-serif !important;
 }
 
+.filter a img {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    margin-top: -75px;
+    z-index: 99999;
+}
+
 .fullscreen-div{
     height: 100vh;
 }
@@ -214,5 +222,4 @@ body{
         margin-left: -130px;
         font-size: 40px;
     }
-
 }
