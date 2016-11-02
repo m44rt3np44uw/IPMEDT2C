@@ -17,11 +17,21 @@ $(document).ready(function () {
                     $("#topNav").animate({
                         top: "0"
                     }, 1300);
+
+                    $('.filter').animate({
+                        right: "25px",
+                        bottom: "25px"
+                    });
                 }
                 else if (index == 2 && direction == 'up') {
                     $("#topNav").animate({
                         top: "-60px"
                     }, 400);
+
+                    $('.filter').animate({
+                        right: "-75px",
+                        bottom: "-75px"
+                    });
                 }
             }
         });
