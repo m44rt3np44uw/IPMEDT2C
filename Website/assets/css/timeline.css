@@ -179,9 +179,11 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 125px;
-    width: 125px;
+    height: 85px;
+    width: 85px;
     background-image: url("../img/Star.png");
+    background-size: 85px;
+    border-top-right-radius: 0.25em;
 }
 .Both .cd-date{
     display: none;
