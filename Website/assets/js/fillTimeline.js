@@ -56,7 +56,7 @@ $(document).ready(function () {
         // hier word de pop-up met content gevuld
         function fill_popup(){
             if (kind == "video"){
-                var srcString = "<video controls poster='" + src +"'>" + "<source src='" + src + "' type='video/mp4'>" + "</video>"
+                var srcString = "<video controls poster='" + src +"'>" + "<source src='" + videosrc + "' type='video/mp4'>" + "</video>"
             } else if (kind == "image"){
                 var srcString = "<img src='" + src + "' />"
             } else {
