@@ -105,9 +105,9 @@ function fill(id) {
             "<div class='imageding'>" +
                 "<img class='artikelimg' src='"+ src +"' />" +
             "</div>" +
-            "<h2>'" + koptext + "'</h2>" +
-            "<p>'" + subtext + "'</p>" +
-            "<a data-id='" + id + "' class='" + "cd-read-more" + "'>Lees meer</a>" +
+            "<h2 class='" + "kop" + from +"'>" + koptext + "</h2>" +
+            "<p>" + subtext + "</p>" +
+            "<a data-id='" + id + "' class='" + "cd-read-more btn icon-boek" + "'><span>Lees meer</span></a>" +
             "<span class='" + "cd-date" + "'>" + moment(date, "DD-MM-YYYY").format("LL") + "</span>" +
         "</div>" +
     "</div>");
