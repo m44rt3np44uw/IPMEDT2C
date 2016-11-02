@@ -102,7 +102,9 @@ function fill(id) {
     items.push("<div class='" + "cd-timeline-block" + "'>" +
         "<div class='" + "cd-timeline-img " + kind + " " + from + "'></div>" +
         "<div class='" + "cd-timeline-content " + from + "'>" +
-            "<img class='artikelimg' src='"+ src +"' />" +
+            "<div class='imageding'>" +
+                "<img class='artikelimg' src='"+ src +"' />" +
+            "</div>" +
             "<h2>'" + koptext + "'</h2>" +
             "<p>'" + subtext + "'</p>" +
             "<a data-id='" + id + "' class='" + "cd-read-more" + "'>Lees meer</a>" +
