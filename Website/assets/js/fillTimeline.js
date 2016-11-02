@@ -14,6 +14,7 @@ $(document).ready(function() {
         getSrc(currentId);
         getFrom(currentId);
         getKind(currentId);
+        getBron(currentId);
 
         // hier word de pop-up in de html toegevoegd
         $("body").prepend(
@@ -23,9 +24,11 @@ $(document).ready(function() {
         if(from == 'Clinton'){
             console.log("2")
             $(".modal-article").find("h1").css("color","#3598db");
+            $(".modal-article").find("a").css("color","#3598db");
         } else if (from == 'Trump') {
             console.log("1")
             $(".modal-article").find("h1").css("color","#e74d3d");
+            $(".modal-article").find("a").css("color","#e74d3d");
         } else {
             //veranderen?
             console.log("3")
@@ -34,13 +37,25 @@ $(document).ready(function() {
 
         // hier word de pop-up met content gevuld
         function fill_popup(){
+            if (kind == "video"){
+                var srcString = "<video controls poster='" + src +"'>" + "<source src='" + src + "' type='video/mp4'>" + "</video>"
+            } else if (kind == "image"){
+                var srcString = "<img src='" + src + "' />"
+            } else {
+                srcString = "";
+            }
+
             var string = $("#modal").innerHTML =
                 "<div class='modal-content'>" +
                     "<span class='close'>x</span>" +
-                    "<img src='" + src + "' />"+
+                    srcString +
                     "<div class='modal-article'> " +
                         "<h1>" + koptext + "</h1>" +
                         "<p>" + subtext + "</p>"+
+                        "<div class='modal-article-block'> " +
+                            "<a href='" + bron + "'>" + bron + "<a/>" +
+                            "<p>" + date + "</p>"+
+                        "</div>" +
                     "</div>" +
                 "</div>";
             return string;
@@ -80,6 +95,7 @@ function fill(id) {
     getSrc(id);
     getFrom(id);
     getKind(id);
+    getBron(id);
 
     var items = [];
 
@@ -219,6 +235,23 @@ function getKind(id) {
                     if (prop == "kind") {
                         if(obj.hasOwnProperty(prop)){
                             kind = obj[prop];
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+function getBron(id) {
+    for (var key in data) {
+        if(key == id) { //gelijk aan degene die je wilt hebben
+            if (data.hasOwnProperty(key)) {
+                var obj = data[key];
+                for (var prop in obj) {
+                    if (prop == "bron") {
+                        if(obj.hasOwnProperty(prop)){
+                            bron = obj[prop];
                         }
                     }
                 }
