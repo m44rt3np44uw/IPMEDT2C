@@ -20,7 +20,7 @@ $(document).ready(function () {
 
                     $('.filter').animate({
                         right: "25px",
-                        bottom: "25px"
+                        bottom: "35px"
                     });
                 }
                 else if (index == 2 && direction == 'up') {
