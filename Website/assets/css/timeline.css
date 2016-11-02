@@ -162,6 +162,7 @@
     width: 70px;
     height: 70px;
     left: -15px;
+    margin-top: 65px;
 }
 .cd-timeline-block.last{
     height: 50px;
@@ -182,7 +183,9 @@
     width: 125px;
     background-image: url("../img/Star.png");
 }
-
+.Both .cd-date{
+    display: none;
+}
 /* lees meer button */
 .btn {
     position: relative;

@@ -132,9 +132,9 @@ body{
     font-family: 'Open Sans - Regular', sans-serif;
     font-size: 25px;
 }
-#trumpNav{
+#trumpNav {
     width: 50%;
-    float:right;
+    float: right;
     text-align: center;
     height: 40px;
     background: #e74d3d;
@@ -142,6 +142,7 @@ body{
     color: #ecf0f1;
     font-family: 'Open Sans - Regular', sans-serif;
     font-size: 25px;
+}
 
 /*tablet resolutie dingen*/
 @media (max-width: 950px){
