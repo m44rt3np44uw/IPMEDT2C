@@ -301,7 +301,7 @@
         text-align: right;
     }
     .Both {
-        width: 97%;
+        width: 100%;
         padding-right: 33px;
     }
     .Both.cd-timeline-content::before{
