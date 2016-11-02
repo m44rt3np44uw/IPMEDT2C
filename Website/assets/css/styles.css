@@ -97,8 +97,8 @@ body{
     position: absolute;
     right: 0;
     top: 0;
-    width: 500px;
-    margin-right: -250px;
+    width: 100%;
+    margin-right: -50%;
     background-color: #e74d3d;
     height: 100%;
 }
@@ -107,8 +107,8 @@ body{
     position: absolute;
     left: 0;
     top: 0;
-    width: 500px;
-    margin-left: -250px;
+    width: 100%;
+    margin-left: -50%;
     background-color: #3598db;
     height: 100%;
 }
