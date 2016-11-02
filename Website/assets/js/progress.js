@@ -1,2 +1,4 @@
 // Enable progressbar.
-scrollProgress.set();
+$(document).on('timeline-ready', function() {
+    scrollProgress.set();
+});
