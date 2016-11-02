@@ -55,3 +55,9 @@
     cursor: pointer;
 }
 
+/*tablet resolutie dingen*/
+@media (max-width: 800px) {
+    .modal-content {
+        width: 90%;
+    }
+}

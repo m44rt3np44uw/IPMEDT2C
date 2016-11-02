@@ -145,6 +145,7 @@ body{
 
 /*tablet resolutie dingen*/
 @media (max-width: 950px){
+
     #HillaryText{
         font-size: 5vw;
         margin-top: -40px;
