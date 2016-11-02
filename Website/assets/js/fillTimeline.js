@@ -1,9 +1,26 @@
-$(document).ready(function() {
-    for (var key in data) {
-        var id = key;
-        fill(id);
+$(document).ready(function () {
+    moment.locale('nl');
 
-    }
+    dagOld = 0;
+    from = 0;
+    idOld = 0;
+
+    //eerste
+    $('#Tijdlijn').append("<div class='" + "cd-timeline-block first" + "'>" +
+        "<div class='cd-timeline-img first'></div>" +
+        "</div>");
+
+    //artikelen
+    $.when($.each(data, function (key, value) {
+        fill("id" + value.id);
+    })).then(function () {
+        $(document).trigger('timeline-ready');
+    });
+
+    //laatste
+    $('#Tijdlijn').append("<div class='" + "cd-timeline-block last" + "'>" +
+        "<div class='cd-timeline-img last'></div>" +
+        "</div>");
 
     $("#Tijdlijn").delegate("a", "click", function () {
         var currentId = $(this).attr("data-id");
@@ -11,6 +28,7 @@ $(document).ready(function() {
         //haal alle variabelen op uit de file
         getDag(currentId);
         getText(currentId);
+        getKind(currentId);
         getSrc(currentId);
         getFrom(currentId);
         getKind(currentId);
@@ -18,10 +36,10 @@ $(document).ready(function() {
 
         // hier word de pop-up in de html toegevoegd
         $("body").prepend(
-            $("<div id='modal'>"+ fill_popup() + "</div>").hide().fadeIn('slow')
+            $("<div id='modal'>" + fill_popup() + "</div>").hide().fadeIn('slow')
         );
 
-        if(from == 'Clinton'){
+        if (from == 'Clinton') {
             console.log("2")
             $(".modal-article").find("h1").css("color","#3598db");
             $(".modal-article").find("a").css("color","#3598db");
@@ -32,7 +50,7 @@ $(document).ready(function() {
         } else {
             //veranderen?
             console.log("3")
-            $(".modal-article").find("h1").css("color","grey");
+            $(".modal-article").find("h1").css("color", "grey");
         }
 
         // hier word de pop-up met content gevuld
@@ -57,7 +75,10 @@ $(document).ready(function() {
                             "<p>" + date + "</p>"+
                         "</div>" +
                     "</div>" +
-                "</div>";
+                    "</div>"
+
+
+
             return string;
         }
 
@@ -67,13 +88,17 @@ $(document).ready(function() {
         $("#modal").click(handler).find("#modal");
         $("#modal").click(handler).find(".close");
 
-        function handler(event){
+        function handler(event) {
             var target = $(event.target);
-            if (target.is(".close")){
-                $("#modal").fadeOut(300, function() {$(this).remove()});
+            if (target.is(".close")) {
+                $("#modal").fadeOut(300, function () {
+                    $(this).remove()
+                });
             }
-            else if (target.is("#modal") && target != $(".modal-content")){
-                $("#modal").fadeOut(300, function() {$(this).remove()});
+            else if (target.is("#modal") && target != $(".modal-content")) {
+                $("#modal").fadeOut(300, function () {
+                    $(this).remove()
+                });
             }
         }
 
@@ -92,6 +117,7 @@ $(document).ready(function() {
 function fill(id) {
     getDag(id);
     getText(id);
+    getKind(id);
     getSrc(id);
     getFrom(id);
     getKind(id);
@@ -99,44 +125,30 @@ function fill(id) {
 
     var items = [];
 
-    // per dag is 10 margin-top
-    items.push("<div id='" + "circle" + id + "' class='" + "circle " + kind + "' style='" + "margin-top: " + dag*10 + "px" + "'></div>");
-    if(from === "Trump") {
-        items.push("<div id='" + "square" + id + "' class='" + "squareright " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
-            "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
-            "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
-            "<img src='" + src + "' />" +
-            "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
-            "</div>");
-    }
-    if(from === "Clinton"){
-        items.push("<div id='" + "square" + id + "' class='" + "squareleft " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
-            "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
-            "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
-            "<img src='" + src + "' />" +
-            "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
-            "</div>");
-    }
-    if(from === "Both"){
-        items.push("<div id='" + "square" + id + "' class='" + "squarecenter " + "' style='" + "margin-top: " + dag * 10 + "px" + "'>" +
-            "<div class='"+ "kopArtikel" +"'><p>"+ koptext +"</p></div>" +
-            "<div class='"+ "textArtikel" +"'><p>"+ subtext +"</p><p class='" + "moreInfo" + "'><a href='#' data-id='" + id + "'>></a></p></div>" +
-            "<img src='" + src + "' />" +
-            "<div class='"+ "datumArtikel" +"'><p>" + date + "</p></div>" +
-            "</div>");
-    }
+    items.push("<div class='" + "cd-timeline-block" + " filter-" + from.toLowerCase() + "'>" +
+        "<div class='" + "cd-timeline-img " + kind + " " + from + "'></div>" +
+        "<div class='" + "cd-timeline-content " + from + "'>" +
+        "<div class='imageding'>" +
+        "<img class='artikelimg' src='" + src + "' />" +
+        "</div>" +
+        "<h2 class='" + "kop" + from + "'>" + koptext + "</h2>" +
+        "<p>" + subtext + "</p>" +
+        "<a data-id='" + id + "' class='" + "cd-read-more btn icon-boek" + "'><span>Lees meer</span></a>" +
+        "<span class='" + "cd-date" + "'>" + moment(date, "DD-MM-YYYY").format("LL") + "</span>" +
+        "</div>" +
+        "</div>");
 
     $('#Tijdlijn').append(items);
 }
 
 function getDag(id) {
     for (var key in data) {
-        if(key == id) { //gelijk aan degene die je wilt hebben
+        if (key == id) { //gelijk aan degene die je wilt hebben
             if (data.hasOwnProperty(key)) {
                 var obj = data[key];
                 for (var prop in obj) {
                     if (prop == "date") {
-                        if(obj.hasOwnProperty(prop)){
+                        if (obj.hasOwnProperty(prop)) {
                             date = obj[prop];
                         }
                     }
@@ -144,34 +156,21 @@ function getDag(id) {
             }
         }
     }
-    var res = date.split("-", 3); //split datum in dag, maand en jaar
-    dag = parseInt(res[0]);
-    var maand = parseInt(res[1]);
-    var jaar = parseInt(res[2]);
-    //maak dagen van maanden
-    maand = maand * 30;
-    dag = dag + maand;
-    //tijdlijn begint bij 1 april 2015 = 120 dagen ongeveer
-    dag = dag - 120;
-    //compenseer voor 2016 datums
-    if(jaar === 2016){
-        dag = dag + 365;
-    }
 }
 
 function getText(id) {
     for (var key in data) {
-        if(key == id) { //gelijk aan degene die je wilt hebben
+        if (key == id) { //gelijk aan degene die je wilt hebben
             if (data.hasOwnProperty(key)) {
                 var obj = data[key];
                 for (var prop in obj) {
                     if (prop == "koptext") {
-                        if(obj.hasOwnProperty(prop)){
+                        if (obj.hasOwnProperty(prop)) {
                             koptext = obj[prop];
                         }
                     }
                     if (prop == "subtext") {
-                        if(obj.hasOwnProperty(prop)){
+                        if (obj.hasOwnProperty(prop)) {
                             subtext = obj[prop];
                         }
                     }
@@ -184,20 +183,24 @@ function getText(id) {
 
 function getSrc(id) {
     for (var key in data) {
-        if(key == id) { //gelijk aan degene die je wilt hebben
+        if (key == id) { //gelijk aan degene die je wilt hebben
             if (data.hasOwnProperty(key)) {
                 var obj = data[key];
                 for (var prop in obj) {
-                    if (prop == "src") {
-                        if(obj.hasOwnProperty(prop)){
-                            if (obj[prop] == "video"){
-                                var thumbnail = true;
-                            }
-                            src = obj[prop];
-                        }
-                    }
-                    if(thumbnail = true) {
+                    if (kind == "video") {
+                        //als het een video is haal de thumbnail op.
                         if (prop == "thumbnail") {
+                            if (obj.hasOwnProperty(prop)) {
+                                src = obj[prop];
+                            }
+                        }
+                        if (prop == "src") {
+                            if(obj.hasOwnProperty(prop)) {
+                                videosrc = obj[prop];
+                            }
+                        }
+                    } else {
+                        if (prop == "src") {
                             if (obj.hasOwnProperty(prop)) {
                                 src = obj[prop];
                             }
@@ -211,12 +214,12 @@ function getSrc(id) {
 }
 function getFrom(id) {
     for (var key in data) {
-        if(key == id) { //gelijk aan degene die je wilt hebben
+        if (key == id) { //gelijk aan degene die je wilt hebben
             if (data.hasOwnProperty(key)) {
                 var obj = data[key];
                 for (var prop in obj) {
                     if (prop == "from") {
-                        if(obj.hasOwnProperty(prop)){
+                        if (obj.hasOwnProperty(prop)) {
                             from = obj[prop];
                         }
                     }
@@ -228,12 +231,12 @@ function getFrom(id) {
 }
 function getKind(id) {
     for (var key in data) {
-        if(key == id) { //gelijk aan degene die je wilt hebben
+        if (key == id) { //gelijk aan degene die je wilt hebben
             if (data.hasOwnProperty(key)) {
                 var obj = data[key];
                 for (var prop in obj) {
                     if (prop == "kind") {
-                        if(obj.hasOwnProperty(prop)){
+                        if (obj.hasOwnProperty(prop)) {
                             kind = obj[prop];
                         }
                     }

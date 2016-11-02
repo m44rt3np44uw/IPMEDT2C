@@ -1,0 +1,332 @@
+#Tijdlijn {
+    position: relative;
+    padding: 2em 0;
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+#Tijdlijn::before {
+    /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #d7e4ed;
+}
+
+.cd-timeline-content {
+    position: relative;
+    margin-left: 60px;
+    background: white;
+    border-radius: 0.25em;
+    padding: 0;
+    box-shadow: 0 3px 0 #d7e4ed;
+}
+.cd-timeline-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cd-timeline-content h2 {
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    padding-top: 1.6em;
+}
+    .kopClinton{
+        color: #3598db;
+    }
+    .kopTrump{
+        color: #e74d3d;
+    }
+
+.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    font-size: 13px;
+    font-size: 0.8125rem;
+}
+.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    display: inline-block;
+}
+.cd-timeline-content p {
+    margin: 1em 0;
+    line-height: 1.6;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+}
+.cd-timeline-content .cd-read-more {
+    float: right;
+    padding: .8em 1em;
+    background: #acb7c0;
+    color: white;
+    border-radius: 0.25em;
+    margin: 1.6em;
+    cursor: pointer;
+    overflow: hidden;
+}
+.no-touch .cd-timeline-content .cd-read-more:hover {
+    background-color: #bac4cb;
+}
+.cd-timeline-content .cd-date {
+    float: left;
+    padding: .8em 0;
+    opacity: .7;
+    padding-left: 1.6em;
+}
+.cd-timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid white;
+}
+
+.cd-timeline-block {
+    position: relative;
+    margin: 2em 0;
+}
+.cd-timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.cd-timeline-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.cd-timeline-img img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+.video{
+    background-color: #e74d3d;
+    background-image: url(../img/videoIcon.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.image{
+    background-color: #2d3f51;
+    background-image: url(../img/imageIcon.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.article{
+    background-color: #3598db;
+    background-image: url(../img/articleIcon.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.cd-timeline-img.first {
+    background-color: #2d3f51;
+    background-image: url(../img/route.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80px;
+    width: 80px;
+    margin-left: -20px;
+}
+.cd-timeline-block.first{
+    height: 100px;
+}
+.cd-timeline-img.last{
+    background-color: #2d3f51;
+    background-image: url(../img/white-house.png);
+    background-size: 60% ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 70px;
+    height: 70px;
+    left: -15px;
+    margin-top: 65px;
+}
+.cd-timeline-block.last{
+    height: 50px;
+}
+
+.artikelimg{
+    width: 100%;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+}
+
+.Both .imageding::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 125px;
+    width: 125px;
+    background-image: url("../img/Star.png");
+}
+.Both .cd-date{
+    display: none;
+}
+/* lees meer button */
+.btn {
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.icon-boek:before {
+    content: " ";
+    background-image: url("../img/boek.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.btn span {
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+.btn:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    font-size: 180%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    left: 0;
+    top: -120%;
+}
+
+.btn:hover span {
+    -webkit-transform: translateY(300%);
+    -moz-transform: translateY(300%);
+    -ms-transform: translateY(300%);
+    transform: translateY(300%);
+}
+
+.btn:hover:before {
+    top: 0;
+}
+
+/*desktop screen*/
+@media only screen and (min-width: 1170px) {
+    .cd-timeline-content {
+        margin-left: 0;
+        padding: 0;
+        width: 43%;
+    }
+    .cd-timeline-content::before {
+        top: 24px;
+        left: 100%;
+        border-color: transparent;
+        border-left-color: white;
+    }
+    .cd-timeline-content .cd-read-more {
+        float: left;
+    }
+    .cd-timeline-content .cd-date {
+        position: absolute;
+        width: 100%;
+        left: 127%;
+        top: 6px;
+        font-size: 16px;
+        font-size: 1rem;
+    }
+    #Tijdlijn {
+        margin-top: 2em;
+    }
+    #Tijdlijn::before {
+        left: 50%;
+        margin-left: -2px;
+    }
+    .cd-timeline-img {
+        width: 60px;
+        height: 60px;
+        left: 50%;
+        margin-left: -30px;
+    }
+    .cd-timeline-block {
+        margin: 4em 0;
+    }
+    .Clinton {
+        float: left;
+    }
+    .Trump {
+        float: right;
+    }
+    .Trump.cd-timeline-content::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent;
+        border-right-color: white;
+    }
+    .Trump.cd-timeline-content .cd-date {
+        left: auto;
+        right: 132%;
+        text-align: right;
+    }
+    .Both {
+        width: 100%;
+        /*padding-right: 33px;*/
+    }
+    .Both.cd-timeline-content::before{
+        display: none;
+    }
+    .Both.cd-timeline-img{
+        display: none;
+    }
+
+    .artikelimg{
+        width: 100%;
+        border-top-left-radius: 0.25em;
+        border-top-right-radius: 0.25em;
+    }
+
+    .cd-timeline-img.last{
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px;
+    }
+    .cd-timeline-img.first{
+         margin-left: -40px;
+    }
+}

@@ -15,6 +15,7 @@
     width: 60%;
     height: 100%;
     position: relative;
+    overflow-y: auto;
 }
     .modal-content img{
         width: 100%;
@@ -62,6 +63,7 @@
     position: absolute;
     top: 0;
     right: 10px;
+    z-index: 1;
 }
 
 .close:hover,
@@ -71,3 +73,13 @@
     cursor: pointer;
 }
 
+video{
+    width: 100%;
+}
+
+/*tablet resolutie dingen*/
+@media (max-width: 800px) {
+    .modal-content {
+        width: 90%;
+    }
+}
