@@ -181,6 +181,8 @@ function getText(id) {
 
 }
 
+
+
 function getSrc(id) {
     for (var key in data) {
         if (key == id) { //gelijk aan degene die je wilt hebben
