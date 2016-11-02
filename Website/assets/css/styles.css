@@ -1,4 +1,4 @@
-body{
+body {
     overflow-x: hidden;
     background-color: #ecf0f1;
 }
@@ -7,12 +7,13 @@ body{
     font-family: 'Open Sans - Bold', sans-serif;
     src: url("../fonts/OpenSans-Bold.ttf");
 }
+
 @font-face {
     font-family: 'Open Sans - Regular', sans-serif;
     src: url("../fonts/OpenSans-Regular.ttf");
 }
 
-*{
+* {
     font-family: 'Open Sans - Regular', sans-serif !important;
 }
 
@@ -24,6 +25,7 @@ body{
     height: 50px;
     background-color: #e74d3d;
     border-radius: 100px;
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .filter a img {
@@ -32,12 +34,12 @@ body{
     width: auto;
 }
 
-.fullscreen-div{
+.fullscreen-div {
     height: 100vh;
 }
 
 /*Alles voor de homepage*/
-#bottomText{
+#bottomText {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -45,7 +47,8 @@ body{
     background-color: #2d3f51;
     z-index: 1;
 }
-#bottomText p{
+
+#bottomText p {
     font-size: 25px;
     padding-top: 10px;
     color: white;
@@ -53,7 +56,7 @@ body{
     font-family: 'Open Sans - Bold', sans-serif;
 }
 
-#HillaryText{
+#HillaryText {
     position: absolute;
     left: 10%;
     top: 50%;
@@ -63,7 +66,8 @@ body{
     z-index: 1;
     font-family: 'Open Sans - Bold', sans-serif;
 }
-#TrumpText{
+
+#TrumpText {
     position: absolute;
     right: 10%;
     top: 50%;
@@ -73,26 +77,28 @@ body{
     z-index: 1;
     font-family: 'Open Sans - Bold', sans-serif;
 }
-#versus{
+
+#versus {
     background-color: white;
     height: 120px;
     width: 120px;
     border-radius: 100%;
     position: absolute;
     left: 50%;
-    top:50%;
+    top: 50%;
     margin-left: -60px;
     margin-top: -105px;
     z-index: 1;
     text-align: center;
 }
-#versus h1{
+
+#versus h1 {
     font-family: 'Open Sans - Bold', sans-serif;
     font-size: 50px;
     margin-top: 35px;
 }
 
-#left{
+#left {
     position: absolute;
     left: 0;
     top: 0;
@@ -100,16 +106,17 @@ body{
     height: 100%;
     background-color: #3598db;
 }
-#right{
+
+#right {
     position: absolute;
-    right:0;
+    right: 0;
     top: 0;
     width: 50%;
     height: 100%;
     background-color: #e74d3d;
 }
 
-#TrumpHome{
+#TrumpHome {
     position: absolute;
     right: 0;
     top: 0;
@@ -119,7 +126,7 @@ body{
     height: 100%;
 }
 
-#ClintonHome{
+#ClintonHome {
     position: absolute;
     left: 0;
     top: 0;
@@ -130,16 +137,17 @@ body{
 }
 
 /*Tijdlijn style*/
-#topNav{
-    position:fixed;
+#topNav {
+    position: fixed;
     top: -60px;
-    width:100%;
+    width: 100%;
     height: 45px;
     z-index: 1;
 }
-#clintonNav{
+
+#clintonNav {
     width: 50%;
-    float:left;
+    float: left;
     text-align: center;
     height: 40px;
     background: #3598db;
@@ -148,6 +156,7 @@ body{
     font-family: 'Open Sans - Regular', sans-serif;
     font-size: 25px;
 }
+
 #trumpNav {
     width: 50%;
     float: right;
@@ -161,59 +170,67 @@ body{
 }
 
 /*tablet resolutie dingen*/
-@media (max-width: 950px){
+@media (max-width: 950px) {
 
-    #HillaryText{
+    #HillaryText {
         font-size: 5vw;
         margin-top: -40px;
         left: 5%;
     }
-    #TrumpText{
+
+    #TrumpText {
         font-size: 5vw;
         margin-top: -40px;
         right: 5%;
     }
-    #versus{
+
+    #versus {
         height: 100px;
         width: 100px;
         margin-left: -50px;
         margin-top: -70px;
     }
-    #versus h1{
+
+    #versus h1 {
         font-size: 30px;
     }
 }
 
 /*mobiele resolutie*/
-@media (max-width: 520px){
-    #left{
+@media (max-width: 520px) {
+    #left {
         width: 100%;
         height: 50%;
     }
-    #right{
+
+    #right {
         top: 50%;
         width: 100%;
         height: 50%;
     }
-    #TrumpHome{
+
+    #TrumpHome {
         width: 100%;
         margin-right: 0;
     }
 
-    #ClintonHome{
+    #ClintonHome {
         width: 100%;
-        margin-left:0;
+        margin-left: 0;
     }
-    #versus{
+
+    #versus {
         height: 100px;
         width: 100px;
         margin-left: -50px;
         margin-top: -50px;
     }
-    #versus h1{
+
+    #versus h1 {
         font-size: 40px;
     }
-    #HillaryText{
+
+    #HillaryText {
         left: 50%;
         top: 50%;
         width: 250px;
@@ -221,7 +238,8 @@ body{
         margin-left: -125px;
         font-size: 40px;
     }
-    #TrumpText{
+
+    #TrumpText {
         right: auto;
         left: 50%;
         top: 50%;
