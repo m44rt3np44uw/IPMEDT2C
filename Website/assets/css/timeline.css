@@ -142,8 +142,8 @@
 }
 .cd-timeline-img.first {
     background-color: #2d3f51;
-    background-image: url(../img/start.png);
-    background-size: 60%;
+    background-image: url(../img/route.png);
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center center;
     height: 80px;
@@ -155,8 +155,8 @@
 }
 .cd-timeline-img.last{
     background-color: #2d3f51;
-    background-image: url(../img/eindschermlogo.png);
-    background-size: 120%;
+    background-image: url(../img/white-house.png);
+    background-size: 60% ;
     background-repeat: no-repeat;
     background-position: center center;
     width: 70px;
