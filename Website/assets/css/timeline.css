@@ -133,26 +133,38 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+.cd-timeline-img.first {
+    background-color: #2d3f51;
+    background-image: url(../img/start.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80px;
+    width: 80px;
+    margin-left: -20px;
+}
+.cd-timeline-block.first{
+    height: 100px;
+}
+.cd-timeline-img.last{
+    background-color: #2d3f51;
+    background-image: url(../img/eindschermlogo.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 70px;
+    height: 70px;
+    left: -15px;
+}
+.cd-timeline-block.last{
+    height: 50px;
+}
 
 .artikelimg{
     width: 100%;
     border-top-left-radius: 0.25em;
     border-top-right-radius: 0.25em;
 }
-#tijdlijnBegin{
-    padding-top: 49px;
-    height: 25px;
-}
-    #tijdlijnBegin p{
-        width: 100px;
-        height: 50px;
-        background-color: #d7e4ed;
-        margin: 0 auto;
-        border-bottom-left-radius: 100px;
-        border-bottom-right-radius: 100px;
-        text-align: center;
-        padding-top: 10px;
-    }
 
 /*desktop screen*/
 @media only screen and (min-width: 1170px) {
@@ -180,7 +192,6 @@
     }
     #Tijdlijn {
         margin-top: 2em;
-        margin-bottom: 3em;
     }
     #Tijdlijn::before {
         left: 50%;
@@ -228,5 +239,15 @@
         width: 100%;
         border-top-left-radius: 0.25em;
         border-top-right-radius: 0.25em;
+    }
+
+    .cd-timeline-img.last{
+        width: 100px;
+        height: 100px;
+        left: 50%;
+        margin-left: -50px;
+    }
+    .cd-timeline-img.first{
+         margin-left: -40px;
     }
 }

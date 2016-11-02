@@ -1,6 +1,6 @@
 body{
     overflow-x: hidden;
-	background-color: #ecf0f1;
+    background-color: #ecf0f1;
 }
 
 @font-face {
@@ -29,13 +29,13 @@ body{
     background-color: #2d3f51;
     z-index: 1;
 }
-    #bottomText p{
-        font-size: 25px;
-        padding-top: 10px;
-        color: white;
-        text-align: center;
-        font-family: 'Open Sans - Bold', sans-serif;
-    }
+#bottomText p{
+    font-size: 25px;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans - Bold', sans-serif;
+}
 
 #HillaryText{
     position: absolute;
@@ -70,11 +70,11 @@ body{
     z-index: 1;
     text-align: center;
 }
-    #versus h1{
-        font-family: 'Open Sans - Bold', sans-serif;
-        font-size: 50px;
-        margin-top: 35px;
-    }
+#versus h1{
+    font-family: 'Open Sans - Bold', sans-serif;
+    font-size: 50px;
+    margin-top: 35px;
+}
 
 #left{
     position: absolute;
@@ -121,28 +121,27 @@ body{
     height: 45px;
     z-index: 1;
 }
-    #clintonNav{
-        width: 50%;
-        float:left;
-        text-align: center;
-        height: 40px;
-        background: #3598db;
-        padding-top: 10px;
-        color: #ecf0f1;
-        font-family: 'Open Sans - Regular', sans-serif;
-        font-size: 25px;
-    }
-    #trumpNav{
-        width: 50%;
-        float:right;
-        text-align: center;
-        height: 40px;
-        background: #e74d3d;
-        padding-top: 10px;
-        color: #ecf0f1;
-        font-family: 'Open Sans - Regular', sans-serif;
-        font-size: 25px;
-    }
+#clintonNav{
+    width: 50%;
+    float:left;
+    text-align: center;
+    height: 40px;
+    background: #3598db;
+    padding-top: 10px;
+    color: #ecf0f1;
+    font-family: 'Open Sans - Regular', sans-serif;
+    font-size: 25px;
+}
+#trumpNav{
+    width: 50%;
+    float:right;
+    text-align: center;
+    height: 40px;
+    background: #e74d3d;
+    padding-top: 10px;
+    color: #ecf0f1;
+    font-family: 'Open Sans - Regular', sans-serif;
+    font-size: 25px;
 
 /*tablet resolutie dingen*/
 @media (max-width: 950px){
@@ -213,5 +212,5 @@ body{
         margin-left: -130px;
         font-size: 40px;
     }
-	
+
 }

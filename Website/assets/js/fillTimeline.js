@@ -4,10 +4,22 @@ $(document).ready(function() {
     dagOld = 0;
     from = 0;
     idOld = 0;
+
+    //eerste
+    $('#Tijdlijn').append(  "<div class='" + "cd-timeline-block first" + "'>" +
+                                "<div class='cd-timeline-img first'></div>" +
+                            "</div>");
+
+    //artikelen
     for (var key in data) {
         var id = key;
         fill(id);
     }
+
+    //laatste
+    $('#Tijdlijn').append(  "<div class='" + "cd-timeline-block last" + "'>" +
+                                "<div class='cd-timeline-img last'></div>" +
+                            "</div>");
 
     $("#Tijdlijn").delegate("a", "click", function () {
         var currentId = $(this).attr("data-id");
