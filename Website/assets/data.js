@@ -3,7 +3,7 @@ var data = {
         "id": 0,
         "date": "12-4-2015",
         "src": "assets/video/EersteCampagneVideo.mp4",
-        "thumbnail": "assets/img/Thumbnails/EersteCampagneVideo.jpg",
+        "thumbnail": "assets/img/thumbnails/EersteCampagneVideo.jpg",
         "koptext": "Hillary Clinton stelt zich officieel presidentskandidaat",
         "subtext": "\"Gewone Amerikanen hebben iemand nodig die voor hen opkomt\", zegt ze daarin. \"Ik wil diegene zijn.\" Ze zegt zich te willen inzetten voor meer economische zekerheid voor de middenklasse en voor de arme Amerikanen.",
         "from": "Clinton",
