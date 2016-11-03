@@ -91,6 +91,7 @@
 }
 
 .cd-timeline-content .cd-date {
+    margin-top: 20px;
     float: left;
     padding: .8em 0;
     opacity: .7;
@@ -290,6 +291,7 @@
         float: left;
     }
     .cd-timeline-content .cd-date {
+        margin-top: inherit;
         position: absolute;
         width: 100%;
         left: 127%;
@@ -337,7 +339,10 @@
     }
 
     .Both .cd-date{
-        display: none;
+        left: -35px;
+        bottom: 20px;
+        top: inherit;
+        text-align: right;
     }
 
     .Both {
