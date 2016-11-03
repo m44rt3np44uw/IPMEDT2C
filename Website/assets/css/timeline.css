@@ -214,9 +214,6 @@
     background-size: 125px;
 }
 
-.Both .cd-date{
-    display: none;
-}
 /* lees meer button */
 .btn {
     position: relative;
@@ -317,6 +314,9 @@
     .cd-timeline-block {
         margin: 4em 0;
     }
+
+
+
     .Clinton {
         float: left;
     }
@@ -335,6 +335,11 @@
         right: 132%;
         text-align: right;
     }
+
+    .Both .cd-date{
+        display: none;
+    }
+
     .Both {
         width: 100%;
         /*padding-right: 33px;*/
