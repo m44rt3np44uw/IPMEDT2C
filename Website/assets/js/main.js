@@ -46,6 +46,11 @@ $(document).ready(function () {
             location.reload();
 
         });
+
+        // Scroll een section naar beneden als er op de "Scroll om verder te gaan" tekst wordt geklikt.
+        $('#bottomText').on('click', function() {
+            $.fn.fullpage.moveSectionDown();
+        });
     });
 
 });
