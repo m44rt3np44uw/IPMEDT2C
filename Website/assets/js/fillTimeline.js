@@ -66,7 +66,7 @@ $(document).ready(function () {
                 "<p>" + subtext + "</p>" +
                 "<div class='modal-article-block'> " +
                 "<p>bron: <a href='" + bron + "'>" + bron + "<a/></p>" +
-                "<p>" + date + "</p>" +
+                "<p>" + moment(date, "DD-MM-YYYY").format("LL") + "</p>" +
                 "</div>" +
                 "</div>" +
                 "</div>";
