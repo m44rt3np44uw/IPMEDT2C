@@ -22,7 +22,7 @@ $(document).ready(function () {
 
                     $filter.animate({
                         right: "25px",
-                        bottom: "35px"
+                        bottom: "25px"
                     });
                 }
                 else if (index == 2 && direction == 'up') {
