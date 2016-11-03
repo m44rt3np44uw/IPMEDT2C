@@ -60,6 +60,9 @@ $(document).ready(function () {
             // Verberg.
             hide();
 
+            // Reset filter.
+            resetFilter(true);
+
             // Init opnieuws
             init();
         });
