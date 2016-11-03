@@ -4,12 +4,13 @@
     width: 90%;
     max-width: 1170px;
     margin: 0 auto;
+    padding-bottom: 0;
 }
 #Tijdlijn::before {
     /* this is the vertical line */
     content: '';
     position: absolute;
-    top: 0;
+    top: 125px;
     left: 18px;
     height: 100%;
     width: 4px;
@@ -162,10 +163,7 @@
     width: 70px;
     height: 70px;
     left: -15px;
-    margin-top: 65px;
-}
-.cd-timeline-block.last{
-    height: 50px;
+    margin-top: 75px;
 }
 
 .artikelimg{
@@ -275,6 +273,7 @@
         margin-top: 2em;
     }
     #Tijdlijn::before {
+        top: 125px;
         left: 50%;
         margin-left: -2px;
     }
