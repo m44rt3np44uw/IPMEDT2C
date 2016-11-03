@@ -52,6 +52,10 @@
         display: table-cell;
     }
 
+    .modal-article-block p:last-of-type {
+        text-align: right;
+    }
+
 .modal-article a {
     text-decoration: none;
 }

@@ -57,6 +57,8 @@ $(document).ready(function () {
                 srcString = "";
             }
 
+            var modifiedBron = bron.split('-')[0] + '.html';
+
             var string = $("#modal").innerHTML =
                 "<div class='modal-content'>" +
                 "<span class='close'></span>" +
@@ -65,7 +67,7 @@ $(document).ready(function () {
                 "<h1>" + koptext + "</h1>" +
                 "<p>" + subtext + "</p>" +
                 "<div class='modal-article-block'> " +
-                "<p>bron: <a href='" + bron + "'>" + bron + "<a/></p>" +
+                "<p>bron: <a href='" + bron + "' target='_blank'>" + modifiedBron + "<a/></p>" +
                 "<p>" + moment(date, "DD-MM-YYYY").format("LL") + "</p>" +
                 "</div>" +
                 "</div>" +
