@@ -92,3 +92,37 @@ footer p a:hover, footer td a:hover {
 #omhoog .kolom-6:last-of-type svg:hover path {
     fill: #2C3E50;
 }
+
+@media only screen and (max-width: 1170px) {
+    .kolom-4 {
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 50px;
+    }
+
+    .ons {
+        text-align: inherit;
+        margin: auto 0;
+    }
+
+    .social {
+        margin-top: 50px;
+    }
+
+    .ons table {
+        margin: 0 auto;
+        width: 250px !important;
+    }
+
+    td {
+        width: 50%;
+    }
+
+    tr td:first-of-type {
+        text-align: left;
+    }
+
+    tr td:last-of-type {
+        text-align: right;
+    }
+}
