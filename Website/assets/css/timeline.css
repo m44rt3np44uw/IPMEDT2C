@@ -293,7 +293,7 @@
     .cd-timeline-content .cd-date {
         margin-top: inherit;
         position: absolute;
-        width: 100%;
+        width: 80%;
         left: 127%;
         top: 6px;
         font-size: 16px;
@@ -339,7 +339,7 @@
     }
 
     .Both .cd-date{
-        left: -35px;
+        left: 17%;
         bottom: 20px;
         top: inherit;
         text-align: right;
