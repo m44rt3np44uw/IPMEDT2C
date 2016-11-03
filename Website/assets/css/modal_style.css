@@ -55,6 +55,30 @@
         display: table-cell;
     }
 
+.modal-trump h1  {
+    color: #e74d3d;
+}
+
+.modal-trump a {
+    color: #e74d3d;
+}
+
+.modal-clinton h1 {
+    color: #3598db;
+}
+
+.modal-clinton a {
+    color: #3598db;
+}
+
+.modal-both h1 {
+    color: #2d3f51;
+}
+
+.modal-both a {
+    color: #2d3f51;
+}
+
 /* The Close Button */
 .close {
     color: #aaaaaa;

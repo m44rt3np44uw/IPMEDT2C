@@ -5,8 +5,10 @@ $(document).ready(function () {
     from = 0;
     idOld = 0;
 
+    var $tijdlijn = $('#Tijdlijn');
+
     //eerste
-    $('#Tijdlijn').append("<div class='" + "cd-timeline-block first" + "'>" +
+    $tijdlijn.append("<div class='" + "cd-timeline-block first" + "'>" +
         "<div class='cd-timeline-img first'></div>" +
         "</div>");
 
@@ -18,13 +20,16 @@ $(document).ready(function () {
     });
 
     //laatste
-    $('#Tijdlijn').append("<div class='" + "cd-timeline-block last" + "'>" +
+    $tijdlijn.append("<div class='" + "cd-timeline-block last" + "'>" +
         "<div class='cd-timeline-img last'></div>" +
         "</div>");
 
-    $("#Tijdlijn").delegate("a", "click", function () {
-        var currentId = $(this).attr("data-id");
+    $('.cd-timeline-content').on('click', function () {
+        var currentId = $(this).find('a').attr('data-id');
+        doPopup(currentId);
+    });
 
+    function doPopup(currentId) {
         //haal alle variabelen op uit de file
         getDag(currentId);
         getText(currentId);
@@ -39,78 +44,56 @@ $(document).ready(function () {
             $("<div id='modal'>" + fill_popup() + "</div>").hide().fadeIn('slow')
         );
 
-        if (from == 'Clinton') {
-            console.log("2")
-            $(".modal-article").find("h1").css("color","#3598db");
-            $(".modal-article").find("a").css("color","#3598db");
-        } else if (from == 'Trump') {
-            console.log("1")
-            $(".modal-article").find("h1").css("color","#e74d3d");
-            $(".modal-article").find("a").css("color","#e74d3d");
-        } else {
-            //veranderen?
-            console.log("3")
-            $(".modal-article").find("h1").css("color", "grey");
-        }
-
         // hier word de pop-up met content gevuld
-        function fill_popup(){
-            if (kind == "video"){
-                var srcString = "<video controls poster='" + src +"'>" + "<source src='" + videosrc + "' type='video/mp4'>" + "</video>"
-            } else if (kind == "image"){
-                var srcString = "<img src='" + src + "' />"
+        function fill_popup() {
+
+            var srcString;
+
+            if (kind == "video") {
+                srcString = "<video controls poster='" + src + "'>" + "<source src='" + videosrc + "' type='video/mp4'>" + "</video>"
+            } else if (kind == "image") {
+                srcString = "<img src='" + src + "' />"
             } else {
                 srcString = "";
             }
 
             var string = $("#modal").innerHTML =
                 "<div class='modal-content'>" +
-                    "<span class='close'>x</span>" +
-                    srcString +
-                    "<div class='modal-article'> " +
-                        "<h1>" + koptext + "</h1>" +
-                        "<p>" + subtext + "</p>"+
-                        "<div class='modal-article-block'> " +
-                            "<a href='" + bron + "'>" + bron + "<a/>" +
-                            "<p>" + date + "</p>"+
-                        "</div>" +
-                    "</div>" +
-                    "</div>"
-
+                "<span class='close'>x</span>" +
+                srcString +
+                "<div class='modal-article modal-" + from.toLowerCase() + "'> " +
+                "<h1>" + koptext + "</h1>" +
+                "<p>" + subtext + "</p>" +
+                "<div class='modal-article-block'> " +
+                "<a href='" + bron + "'>" + bron + "<a/>" +
+                "<p>" + date + "</p>" +
+                "</div>" +
+                "</div>" +
+                "</div>";
 
 
             return string;
         }
 
+        var $modal = $('#modal');
 
-        // Close Pop-up
-
-        $("#modal").click(handler).find("#modal");
-        $("#modal").click(handler).find(".close");
+        $modal.click(handler).find("#modal");
+        $modal.click(handler).find(".close");
 
         function handler(event) {
             var target = $(event.target);
             if (target.is(".close")) {
-                $("#modal").fadeOut(300, function () {
+                $modal.fadeOut(300, function () {
                     $(this).remove()
                 });
             }
             else if (target.is("#modal") && target != $(".modal-content")) {
-                $("#modal").fadeOut(300, function () {
+                $modal.fadeOut(300, function () {
                     $(this).remove()
                 });
             }
         }
-
-
-        // $("#modal").click('blur', function() {
-        //    $(this).fadeOut(300);
-        // });
-        //
-        // $(".close").click( function() {
-        //     $("#modal").remove();
-        // })
-    });
+    }
 });
 
 //vul de tijdlijn
@@ -182,7 +165,6 @@ function getText(id) {
 }
 
 
-
 function getSrc(id) {
     for (var key in data) {
         if (key == id) { //gelijk aan degene die je wilt hebben
@@ -197,7 +179,7 @@ function getSrc(id) {
                             }
                         }
                         if (prop == "src") {
-                            if(obj.hasOwnProperty(prop)) {
+                            if (obj.hasOwnProperty(prop)) {
                                 videosrc = obj[prop];
                             }
                         }
@@ -250,12 +232,12 @@ function getKind(id) {
 }
 function getBron(id) {
     for (var key in data) {
-        if(key == id) { //gelijk aan degene die je wilt hebben
+        if (key == id) { //gelijk aan degene die je wilt hebben
             if (data.hasOwnProperty(key)) {
                 var obj = data[key];
                 for (var prop in obj) {
                     if (prop == "bron") {
-                        if(obj.hasOwnProperty(prop)){
+                        if (obj.hasOwnProperty(prop)) {
                             bron = obj[prop];
                         }
                     }
