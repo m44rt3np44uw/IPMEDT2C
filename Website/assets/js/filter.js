@@ -21,7 +21,13 @@ $(document).on('timeline-ready', function() {
             }
         });
 
-        // Pas de hoogte aan.
-        $.fn.fullpage.reBuild();
+        //doe de functie na een halve seconde. Anders doet ie het niet...(vraag niet waarom)
+        setTimeout(resize, 500);
+
     });
 });
+
+
+function resize() {
+    $.fn.fullpage.reBuild(true);
+}
