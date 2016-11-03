@@ -20,5 +20,8 @@ $(document).on('timeline-ready', function() {
                 }
             }
         });
+
+        // Pas de hoogte aan.
+        $.fn.fullpage.reBuild();
     });
 });

@@ -65,7 +65,7 @@ $(document).ready(function () {
                 "<h1>" + koptext + "</h1>" +
                 "<p>" + subtext + "</p>" +
                 "<div class='modal-article-block'> " +
-                "<a href='" + bron + "'>" + bron + "<a/>" +
+                "<p>bron: <a href='" + bron + "'>" + bron + "<a/></p>" +
                 "<p>" + date + "</p>" +
                 "</div>" +
                 "</div>" +

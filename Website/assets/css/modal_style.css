@@ -19,30 +19,27 @@
 }
     .modal-content img{
         width: 100%;
-        height: 60%;
         object-fit: cover;
     }
 
     .modal-content video{
         width: 100%;
-        height: 60%;
         object-fit: cover;
     }
 
 .modal-article{
     padding: 50px;
-
     font-family: 'Open Sans - Regular', sans-serif;
 }
     .modal-article h1{
-        font-size: 2.5vw;
+        font-size: 2.5rem;
         font-weight: bold;
         padding-bottom: 30px;
-        line-height: 130%;
+        line-height: 3.5rem;
     }
     .modal-article p{
         color: gray;
-        line-height: 120%;
+        line-height: 2rem;
     }
 
     .modal-article-block{
@@ -54,6 +51,14 @@
     .modal-article-block p{
         display: table-cell;
     }
+
+.modal-article a {
+    text-decoration: none;
+}
+
+.modal-article a:hover {
+    border-bottom: 1px solid;
+}
 
 .modal-trump h1  {
     color: #e74d3d;

@@ -31,9 +31,12 @@
     clear: both;
 }
 .cd-timeline-content h2 {
-    padding-left: 1.6em;
-    padding-right: 1.6em;
-    padding-top: 1.6em;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    padding-top: 1.6rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
     .kopClinton{
         color: #3598db;
@@ -55,9 +58,10 @@
 }
 .cd-timeline-content p {
     margin: 1em 0;
-    line-height: 1.6;
-    padding-left: 1.6em;
-    padding-right: 1.6em;
+    line-height: 2;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    color: gray;
 }
 
 .clinton-button {
@@ -91,6 +95,7 @@
     padding: .8em 0;
     opacity: .7;
     padding-left: 1.6em;
+    color: gray;
 }
 .cd-timeline-content::before {
     content: '';
