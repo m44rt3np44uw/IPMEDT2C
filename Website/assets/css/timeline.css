@@ -42,6 +42,10 @@
         color: #e74d3d;
     }
 
+    .kopBoth {
+        color: #2d3f51;
+    }
+
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -55,6 +59,19 @@
     padding-left: 1.6em;
     padding-right: 1.6em;
 }
+
+.clinton-button {
+    background-color: #3598db !important;
+}
+
+.trump-button {
+    background-color: #e74d3d !important;
+}
+
+.both-button {
+    background-color: #2d3f51 !important;
+}
+
 .cd-timeline-content .cd-read-more {
     float: right;
     padding: .8em 1em;
@@ -68,6 +85,7 @@
 .no-touch .cd-timeline-content .cd-read-more:hover {
     background-color: #bac4cb;
 }
+
 .cd-timeline-content .cd-date {
     float: left;
     padding: .8em 0;
