@@ -24,7 +24,21 @@
     border-radius: 0.25em;
     padding: 0;
     box-shadow: 0 3px 0 #d7e4ed;
+    transition: all 500ms;
 }
+
+.cd-timeline-content.Clinton:hover {
+    box-shadow: 0 3px 0 #3598db;
+}
+
+.cd-timeline-content.Trump:hover {
+    box-shadow: 0 3px 0 #e74d3d;
+}
+
+.cd-timeline-content.Both:hover {
+    box-shadow: 0 3px 0 #2d3f51;
+}
+
 .cd-timeline-content:after {
     content: "";
     display: table;
