@@ -200,7 +200,15 @@
     background-image: url("../img/Star.png");
     background-size: 85px;
     border-top-right-radius: 0.25em;
+    transition: all 200ms;
 }
+
+.imageding:hover.imageding::before {
+    height: 125px;
+    width: 125px;
+    background-size: 125px;
+}
+
 .Both .cd-date{
     display: none;
 }
