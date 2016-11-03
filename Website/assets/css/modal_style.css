@@ -86,20 +86,21 @@
 
 /* The Close Button */
 .close {
-    color: #aaaaaa;
-    font-size: 28px;
-    font-weight: bold;
     position: absolute;
-    top: 0;
-    right: 10px;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
     z-index: 1;
+    background-image: url("../img/delete-gray.png");
+    background-size: 20px;
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+    opacity: 1;
 }
 
 video{

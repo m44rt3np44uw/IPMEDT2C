@@ -59,7 +59,7 @@ $(document).ready(function () {
 
             var string = $("#modal").innerHTML =
                 "<div class='modal-content'>" +
-                "<span class='close'>x</span>" +
+                "<span class='close'></span>" +
                 srcString +
                 "<div class='modal-article modal-" + from.toLowerCase() + "'> " +
                 "<h1>" + koptext + "</h1>" +
