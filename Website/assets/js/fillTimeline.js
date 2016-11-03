@@ -128,7 +128,7 @@ function fill(id) {
     items.push("<div class='" + "cd-timeline-block" + " filter-" + from.toLowerCase() + "'>" +
         "<div class='" + "cd-timeline-img " + kind + " " + from + "'></div>" +
         "<div class='" + "cd-timeline-content " + from + "'>" +
-        "<div class='imageding'>" +
+        "<div class='imageding " + kind + "-controls'>" +
         "<img class='artikelimg' src='" + src + "' />" +
         "</div>" +
         "<h2 class='" + "kop" + from + "'>" + koptext + "</h2>" +

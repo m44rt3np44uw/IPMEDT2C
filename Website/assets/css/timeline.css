@@ -331,3 +331,19 @@
          margin-left: -40px;
     }
 }
+
+.video-controls {
+    position: relative;
+}
+
+.video-controls:before {
+    content: '';
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: url(../img/play-button.png);
+    background-size: 80px;
+    border-top-right-radius: 0.25em;
+}
