@@ -3,48 +3,65 @@ $(document).ready(function () {
     // Timeline ready
     $(document).on('timeline-ready', function () {
 
-        // Scroll weg van homepage direct naar tijdlijn
-        $('#fullpage').fullpage({
-            scrollOverflow: true,
-            normalScrollElements: '#tijdlijnSection',
+        var $topNav = $('#topNav'),
+            $filter = $('.filter');
 
-            //voor de bovennav die tevoorschijn komt bij de tweede sectie
-            onLeave: function (index, nextIndex, direction) {
+        function hide() {
+            $topNav.animate({
+                top: "-60px"
+            }, 400);
 
-                var $topNav = $('#topNav'),
-                    $filter = $('.filter');
+            $filter.animate({
+                right: "-75px",
+                bottom: "-75px"
+            });
+        }
 
-                //after leaving section 1
-                if (index == 1 && direction == 'down') {
-                    $topNav.animate({
-                        top: "0"
-                    }, 1300);
+        function show() {
+            $topNav.animate({
+                top: "0"
+            }, 1300);
 
-                    $filter.animate({
-                        right: "25px",
-                        bottom: "25px"
-                    });
+            $filter.animate({
+                right: "25px",
+                bottom: "25px"
+            });
+        }
+
+        function init() {
+            // Scroll weg van homepage direct naar tijdlijn
+            $('#fullpage').fullpage({
+                scrollOverflow: true,
+                normalScrollElements: '#tijdlijnSection',
+
+                //voor de bovennav die tevoorschijn komt bij de tweede sectie
+                onLeave: function (index, nextIndex, direction) {
+
+                    //after leaving section 1
+                    if (index == 1 && direction == 'down') {
+                        show();
+                    }
+                    else if (index == 2 && direction == 'up') {
+                        hide();
+                    }
                 }
-                else if (index == 2 && direction == 'up') {
-                    $topNav.animate({
-                        top: "-60px"
-                    }, 400);
+            });
+        }
 
-                    $filter.animate({
-                        right: "-75px",
-                        bottom: "-75px"
-                    });
-                }
-            }
-        });
+        // Initialize.
+        init();
 
         // Scroll de pagina terug omhoog.
         $('.ga-omhoog').on('click', function () {
 
             // Scroll omhoog.
-            // TODO: tijdelijk
-            location.reload();
+            $.fn.fullpage.destroy('all');
 
+            // Verberg.
+            hide();
+
+            // Init opnieuws
+            init();
         });
 
         // Scroll een section naar beneden als er op de "Scroll om verder te gaan" tekst wordt geklikt.
