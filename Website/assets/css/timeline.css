@@ -345,5 +345,12 @@
     top: 0; left: 0; bottom: 0; right: 0;
     background-image: url(../img/play-button.png);
     background-size: 80px;
-    border-top-right-radius: 0.25em;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.video-controls:hover.video-controls:before {
+    height: 100px;
+    width: 100px;
+    background-size: 100px;
 }
