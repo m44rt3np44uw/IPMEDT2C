@@ -73,6 +73,14 @@ function doClick() {
         var currentId = $(this).find('a').attr('data-id');
         doPopup(currentId);
     });
+
+    $( document ).on( 'keydown', function ( e ) {
+        if ( e.keyCode === 27 ) { // ESC
+            $('#modal').fadeOut(300, function () {
+                $(this).remove()
+            });
+        }
+    });
 }
 
 function doPopup(currentId) {
