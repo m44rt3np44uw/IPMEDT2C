@@ -4,7 +4,8 @@ $(document).ready(function () {
     $(document).on('timeline-ready', function () {
 
         var $topNav = $('#topNav'),
-            $filter = $('.filter');
+            $filter = $('.filter'),
+            $sort   = $('.sort');
 
         function hide() {
             $topNav.animate({
@@ -12,6 +13,11 @@ $(document).ready(function () {
             }, 400);
 
             $filter.animate({
+                right: "-75px",
+                bottom: "-75px"
+            });
+
+            $sort.animate({
                 right: "-75px",
                 bottom: "-75px"
             });
@@ -24,6 +30,11 @@ $(document).ready(function () {
 
             $filter.animate({
                 right: "25px",
+                bottom: "25px"
+            });
+
+            $sort.animate({
+                right: "100px",
                 bottom: "25px"
             });
         }

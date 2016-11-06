@@ -5,97 +5,17 @@ $(document).ready(function () {
     from = 0;
     idOld = 0;
 
-    var $tijdlijn = $('#Tijdlijn');
-
     //eerste
-    $tijdlijn.append("<div class='" + "cd-timeline-block first" + "'>" +
-        "<div class='cd-timeline-img first'></div>" +
-        "</div>");
+    addFirst('route');
 
     //artikelen
-    $.when($.each(data, function (key, value) {
-        fill("id" + value.id);
-    })).then(function () {
-        $(document).trigger('timeline-ready');
-    });
+    addArticles(data, true);
 
     //laatste
-    $tijdlijn.append("<div class='" + "cd-timeline-block last" + "'>" +
-        "<div class='cd-timeline-img last'></div>" +
-        "</div>");
+    addLast('white-house');
 
-    $('.cd-timeline-content').on('click', function () {
-        var currentId = $(this).find('a').attr('data-id');
-        doPopup(currentId);
-    });
-
-    function doPopup(currentId) {
-        //haal alle variabelen op uit de file
-        getDag(currentId);
-        getText(currentId);
-        getKind(currentId);
-        getSrc(currentId);
-        getFrom(currentId);
-        getKind(currentId);
-        getBron(currentId);
-
-        // hier word de pop-up in de html toegevoegd
-        $("body").prepend(
-            $("<div id='modal'>" + fill_popup() + "</div>").hide().fadeIn('slow')
-        );
-
-        // hier word de pop-up met content gevuld
-        function fill_popup() {
-
-            var srcString;
-
-            if (kind == "video") {
-                srcString = "<video controls poster='" + src + "'>" + "<source src='" + videosrc + "' type='video/mp4'>" + "</video>"
-            } else if (kind == "image") {
-                srcString = "<img src='" + src + "' />"
-            } else {
-                srcString = "";
-            }
-
-            var modifiedBron = bron.split('-')[0] + '.html';
-
-            var string = $("#modal").innerHTML =
-                "<div class='modal-content'>" +
-                "<span class='close'></span>" +
-                srcString +
-                "<div class='modal-article modal-" + from.toLowerCase() + "'> " +
-                "<h1>" + koptext + "</h1>" +
-                "<p>" + subtext + "</p>" +
-                "<div class='modal-article-block'> " +
-                "<p>bron: <a href='" + bron + "' target='_blank'>" + modifiedBron + "<a/></p>" +
-                "<p>" + moment(date, "DD-MM-YYYY").format("LL") + "</p>" +
-                "</div>" +
-                "</div>" +
-                "</div>";
-
-
-            return string;
-        }
-
-        var $modal = $('#modal');
-
-        $modal.click(handler).find("#modal");
-        $modal.click(handler).find(".close");
-
-        function handler(event) {
-            var target = $(event.target);
-            if (target.is(".close")) {
-                $modal.fadeOut(300, function () {
-                    $(this).remove()
-                });
-            }
-            else if (target.is("#modal") && target != $(".modal-content")) {
-                $modal.fadeOut(300, function () {
-                    $(this).remove()
-                });
-            }
-        }
-    }
+    // Do click acties.
+    doClick();
 });
 
 //vul de tijdlijn
@@ -124,6 +44,103 @@ function fill(id) {
         "</div>");
 
     $('#Tijdlijn').append(items);
+}
+
+function addArticles(articles, init) {
+    $.when($.each(articles, function (key, value) {
+        fill("id" + value.id);
+    })).then(function () {
+        if(init) {
+            $(document).trigger('timeline-ready');
+        }
+    });
+}
+
+function addFirst(image) {
+    $('#Tijdlijn').append("<div class='cd-timeline-block first'>" +
+        "<div class='cd-timeline-img first " + image + "'></div>" +
+        "</div>");
+}
+
+function addLast(image) {
+    $('#Tijdlijn').append("<div class='cd-timeline-block last'>" +
+        "<div class='cd-timeline-img last " + image + "'></div>" +
+        "</div>");
+}
+
+function doClick() {
+    $('.cd-timeline-content').on('click', function () {
+        var currentId = $(this).find('a').attr('data-id');
+        doPopup(currentId);
+    });
+}
+
+function doPopup(currentId) {
+    //haal alle variabelen op uit de file
+    getDag(currentId);
+    getText(currentId);
+    getKind(currentId);
+    getSrc(currentId);
+    getFrom(currentId);
+    getKind(currentId);
+    getBron(currentId);
+
+    // hier word de pop-up in de html toegevoegd
+    $("body").prepend(
+        $("<div id='modal'>" + fill_popup() + "</div>").hide().fadeIn('slow')
+    );
+
+    // hier word de pop-up met content gevuld
+    function fill_popup() {
+
+        var srcString;
+
+        if (kind == "video") {
+            srcString = "<video controls poster='" + src + "'>" + "<source src='" + videosrc + "' type='video/mp4'>" + "</video>"
+        } else if (kind == "image") {
+            srcString = "<img src='" + src + "' />"
+        } else {
+            srcString = "";
+        }
+
+        var modifiedBron = bron.split('-')[0] + '.html';
+
+        var string = $("#modal").innerHTML =
+            "<div class='modal-content'>" +
+            "<span class='close'></span>" +
+            srcString +
+            "<div class='modal-article modal-" + from.toLowerCase() + "'> " +
+            "<h1>" + koptext + "</h1>" +
+            "<p>" + subtext + "</p>" +
+            "<div class='modal-article-block'> " +
+            "<p>bron: <a href='" + bron + "' target='_blank'>" + modifiedBron + "<a/></p>" +
+            "<p>" + moment(date, "DD-MM-YYYY").format("LL") + "</p>" +
+            "</div>" +
+            "</div>" +
+            "</div>";
+
+
+        return string;
+    }
+
+    var $modal = $('#modal');
+
+    $modal.click(handler).find("#modal");
+    $modal.click(handler).find(".close");
+
+    function handler(event) {
+        var target = $(event.target);
+        if (target.is(".close")) {
+            $modal.fadeOut(300, function () {
+                $(this).remove()
+            });
+        }
+        else if (target.is("#modal") && target != $(".modal-content")) {
+            $modal.fadeOut(300, function () {
+                $(this).remove()
+            });
+        }
+    }
 }
 
 function getDag(id) {

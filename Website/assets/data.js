@@ -167,76 +167,76 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2117238-sanders-schaart-zich-achter-clinton-nu-ook-officieel.html"
     },
-    "id22":{
-        "id": 22,
-        "date": "23-07-2016",
-        "src": "assets/img/clinton/Clinton&Kaine.jpg",
-        "thumbnail": "",
-        "koptext": "Clinton kiest Tim Kaine als running mate",
-        "subtext": "Hillary Clinton heeft senator Tim Kaine gekozen als running mate. De keuze voor Kaine als potentieel vice-president komt niet geheel onverwacht. Hij werd al genoemd als een van de grootste kanshebbers.",
-        "from": "Clinton",
-        "belangrijk": 0,
-        "kind": "image",
-        "bron": "http://nos.nl/artikel/2119196-clinton-kiest-tim-kaine-als-running-mate.html"
-    },
-    "id24":{
-        "id": 24,
-        "date": "12-08-2016",
-        "src": "assets/img/clinton/Clinton&Trump.jpg",
-        "thumbnail": "",
-        "koptext": "Wat willen Clinton en Trump met de economie?",
-        "subtext": "Donald Trump en Hillary Clinton hebben deze week hun plannen bekendgemaakt voor de Amerikaanse economie. De Republikein deed dat maandag in de industriestaat Michigan. Voor hem was het de eerste keer dat hij concreet werd over zijn plannen met Amerika. Trump wil een nieuw belastingstelsel, met belastingverlagingen voor iedereen, ook voor de rijken. Wel zei hij dat de rijken hun fair share (eerlijk aandeel) moeten betalen.",
-        "from": "Both",
-        "belangrijk": 1,
-        "kind": "image",
-        "bron": "http://nos.nl/artikel/2124902-wat-willen-clinton-en-trump-met-de-economie.html"
-    },
-    "id25":{
-        "id": 25,
-        "date": "02-09-2016",
-        "src": "assets/img/clinton/Clinton2.jpg",
-        "thumbnail": "",
-        "koptext": "Clinton vroeg nooit toestemming voor gebruik privé-mail",
-        "subtext": "De FBI heeft delen van verslagen gepubliceerd van gesprekken met Hillary Clinton en haar belangrijkste adviseurs over het gebruik van Clintons privé-mailadres als minister van Buitenlandse Zaken. Ze lag onder vuur, omdat dat tegen de regels is en via het adres geheime informatie is verstuurd.",
-        "from": "Clinton",
-        "belangrijk": 0,
-        "kind": "image",
-        "bron": "http://nos.nl/artikel/2129655-clinton-vroeg-nooit-toestemming-voor-gebruik-prive-mail.html"
-    },
-    "id26":{
-        "id": 26,
-        "date": "27-09-2016",
-        "src": "assets/img/Eerstedebat.jpg",
-        "thumbnail": "",
-        "koptext": "Trump en Clinton strijdlustig over belasting, veiligheid en IS",
-        "subtext": "Op de Hofstra University in Hempstead was afgelopen nacht het eerste debat tussen presidentskandidaten Donald Trump en Hillary Clinton. Het was een fel debat dat ruim anderhalf uur duurde.",
-        "from": "Both",
-        "belangrijk": 1,
-        "kind": "image",
-        "bron": "http://nos.nl/artikel/2134612-trump-en-clinton-strijdlustig-over-belasting-veiligheid-en-is.html"
-    },
-    "id28":{
-        "id": 28,
-        "date": "10-10-2016",
-        "src": "assets/img/Tweededebat.jpg",
-        "thumbnail": "",
-        "koptext": "Geruzie over 'Pussy'-video, celstraf, Rusland en geen hand vooraf",
-        "subtext": "Donald Trump en Hillary Clinton weigerden elkaar een hand te geven aan het begin van hun tweede debat en daarmee was de toon gezet. Op de Washington University in St. Louis werd flink met modder gegooid, onder meer over Trumps Pussy-video en Clintons e-mails. Ook de ontrouw van Bill Clinton kwam ter sprake.",
-        "from": "Both",
-        "belangrijk": 1,
-        "kind": "image",
-        "bron": "http://nos.nl/artikel/2136891-geruzie-over-pussy-video-celstraf-rusland-en-geen-hand-vooraf.html"
-    },
-    "id30":{
-        "id": 30,
-        "date": "20-10-2016",
-        "src": "assets/img/Derdedebat.jpg",
-        "thumbnail": "",
-        "koptext": "Trump wil niet zeggen of hij uitslag verkiezingen erkent",
-        "subtext": "Donald Trump wil voorlopig niet zeggen of hij zich zal neerleggen bij de uitslag van de Amerikaanse presidentsverkiezingen. In het derde en laatste verkiezingsdebat werd hem gevraagd of hij het verkiezingsresultaat zal aanvaarden als dat slecht voor hem uitpakt. \"Daar kan ik dan pas over oordelen. Ik houd jullie in spanning\", zei Trump.",
-        "from": "Both",
-        "belangrijk": 1,
-        "kind": "image",
-        "bron": "http://nos.nl/artikel/2138661-trump-wil-niet-zeggen-of-hij-uitslag-verkiezingen-erkent.html"
-    }
+    // "id22":{
+    //     "id": 22,
+    //     "date": "23-07-2016",
+    //     "src": "assets/img/clinton/Clinton&Kaine.jpg",
+    //     "thumbnail": "",
+    //     "koptext": "Clinton kiest Tim Kaine als running mate",
+    //     "subtext": "Hillary Clinton heeft senator Tim Kaine gekozen als running mate. De keuze voor Kaine als potentieel vice-president komt niet geheel onverwacht. Hij werd al genoemd als een van de grootste kanshebbers.",
+    //     "from": "Clinton",
+    //     "belangrijk": 0,
+    //     "kind": "image",
+    //     "bron": "http://nos.nl/artikel/2119196-clinton-kiest-tim-kaine-als-running-mate.html"
+    // },
+    // "id24":{
+    //     "id": 24,
+    //     "date": "12-08-2016",
+    //     "src": "assets/img/clinton/Clinton&Trump.jpg",
+    //     "thumbnail": "",
+    //     "koptext": "Wat willen Clinton en Trump met de economie?",
+    //     "subtext": "Donald Trump en Hillary Clinton hebben deze week hun plannen bekendgemaakt voor de Amerikaanse economie. De Republikein deed dat maandag in de industriestaat Michigan. Voor hem was het de eerste keer dat hij concreet werd over zijn plannen met Amerika. Trump wil een nieuw belastingstelsel, met belastingverlagingen voor iedereen, ook voor de rijken. Wel zei hij dat de rijken hun fair share (eerlijk aandeel) moeten betalen.",
+    //     "from": "Both",
+    //     "belangrijk": 1,
+    //     "kind": "image",
+    //     "bron": "http://nos.nl/artikel/2124902-wat-willen-clinton-en-trump-met-de-economie.html"
+    // },
+    // "id25":{
+    //     "id": 25,
+    //     "date": "02-09-2016",
+    //     "src": "assets/img/clinton/Clinton2.jpg",
+    //     "thumbnail": "",
+    //     "koptext": "Clinton vroeg nooit toestemming voor gebruik privé-mail",
+    //     "subtext": "De FBI heeft delen van verslagen gepubliceerd van gesprekken met Hillary Clinton en haar belangrijkste adviseurs over het gebruik van Clintons privé-mailadres als minister van Buitenlandse Zaken. Ze lag onder vuur, omdat dat tegen de regels is en via het adres geheime informatie is verstuurd.",
+    //     "from": "Clinton",
+    //     "belangrijk": 0,
+    //     "kind": "image",
+    //     "bron": "http://nos.nl/artikel/2129655-clinton-vroeg-nooit-toestemming-voor-gebruik-prive-mail.html"
+    // },
+    // "id26":{
+    //     "id": 26,
+    //     "date": "27-09-2016",
+    //     "src": "assets/img/Eerstedebat.jpg",
+    //     "thumbnail": "",
+    //     "koptext": "Trump en Clinton strijdlustig over belasting, veiligheid en IS",
+    //     "subtext": "Op de Hofstra University in Hempstead was afgelopen nacht het eerste debat tussen presidentskandidaten Donald Trump en Hillary Clinton. Het was een fel debat dat ruim anderhalf uur duurde.",
+    //     "from": "Both",
+    //     "belangrijk": 1,
+    //     "kind": "image",
+    //     "bron": "http://nos.nl/artikel/2134612-trump-en-clinton-strijdlustig-over-belasting-veiligheid-en-is.html"
+    // },
+    // "id28":{
+    //     "id": 28,
+    //     "date": "10-10-2016",
+    //     "src": "assets/img/Tweededebat.jpg",
+    //     "thumbnail": "",
+    //     "koptext": "Geruzie over 'Pussy'-video, celstraf, Rusland en geen hand vooraf",
+    //     "subtext": "Donald Trump en Hillary Clinton weigerden elkaar een hand te geven aan het begin van hun tweede debat en daarmee was de toon gezet. Op de Washington University in St. Louis werd flink met modder gegooid, onder meer over Trumps Pussy-video en Clintons e-mails. Ook de ontrouw van Bill Clinton kwam ter sprake.",
+    //     "from": "Both",
+    //     "belangrijk": 1,
+    //     "kind": "image",
+    //     "bron": "http://nos.nl/artikel/2136891-geruzie-over-pussy-video-celstraf-rusland-en-geen-hand-vooraf.html"
+    // },
+    // "id30":{
+    //     "id": 30,
+    //     "date": "20-10-2016",
+    //     "src": "assets/img/Derdedebat.jpg",
+    //     "thumbnail": "",
+    //     "koptext": "Trump wil niet zeggen of hij uitslag verkiezingen erkent",
+    //     "subtext": "Donald Trump wil voorlopig niet zeggen of hij zich zal neerleggen bij de uitslag van de Amerikaanse presidentsverkiezingen. In het derde en laatste verkiezingsdebat werd hem gevraagd of hij het verkiezingsresultaat zal aanvaarden als dat slecht voor hem uitpakt. \"Daar kan ik dan pas over oordelen. Ik houd jullie in spanning\", zei Trump.",
+    //     "from": "Both",
+    //     "belangrijk": 1,
+    //     "kind": "image",
+    //     "bron": "http://nos.nl/artikel/2138661-trump-wil-niet-zeggen-of-hij-uitslag-verkiezingen-erkent.html"
+    // }
 };

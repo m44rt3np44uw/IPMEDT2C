@@ -181,7 +181,6 @@
 }
 .cd-timeline-img.first {
     background-color: #2d3f51;
-    background-image: url(../img/route.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -189,12 +188,14 @@
     width: 80px;
     margin-left: -20px;
 }
+.first.route, .last.route {
+    background-image: url(../img/route.png);
+}
 .cd-timeline-block.first{
     height: 100px;
 }
 .cd-timeline-img.last{
     background-color: #2d3f51;
-    background-image: url(../img/white-house.png);
     background-size: 60% ;
     background-repeat: no-repeat;
     background-position: center center;
@@ -203,7 +204,9 @@
     left: -15px;
     margin-top: 75px;
 }
-
+.last.white-house, .first.white-house {
+    background-image: url(../img/white-house.png);
+}
 .artikelimg{
     width: 100%;
     border-top-left-radius: 0.25em;

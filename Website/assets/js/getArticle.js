@@ -8,7 +8,6 @@ $(document).ready(function () {
 
         //open popup
         $("#Tijdlijn").append("<div id='modal'></div>");
-        console.log("test")
         //laad artikel in popup dmv id
 
         //laad foto's enzovoort...
