@@ -213,7 +213,8 @@
     border-top-right-radius: 0.25em;
 }
 
-.Both .imageding::before{
+.Both .imageding::before,
+.modal-content-both::before{
     content: '';
     position: absolute;
     top: 0;
@@ -224,6 +225,10 @@
     background-size: 85px;
     border-top-right-radius: 0.25em;
     transition: all 200ms;
+}
+
+.modal-content-both::before {
+    border-top-right-radius: 0 !important;
 }
 
 .imageding:hover.imageding::before {

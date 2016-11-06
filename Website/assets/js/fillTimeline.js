@@ -106,8 +106,8 @@ function doPopup(currentId) {
         var modifiedBron = bron.split('-')[0] + '.html';
 
         var string = $("#modal").innerHTML =
-            "<div class='modal-content'>" +
             "<span class='close'></span>" +
+            "<div class='modal-content modal-content-" + from.toLowerCase() + "'>" +
             srcString +
             "<div class='modal-article modal-" + from.toLowerCase() + "'> " +
             "<h1>" + koptext + "</h1>" +
