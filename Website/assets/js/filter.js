@@ -19,41 +19,45 @@ function sortArticles(data, ascending) {
 
     // Remove
     $('.cd-timeline-block').fadeOut("slow", function() {
+        sort();
+    });
+
+    function sort() {
 
         // Verwijder de inhoud.
         $('#Tijdlijn').html('');
 
         // Add first
-        if(ascending) {
+        if (ascending) {
             addFirst('white-house');
-        } else  {
+        } else {
             addFirst('route')
         }
 
         var new_data = {};
 
-        if(ascending) {
-            for(var i = Object.keys(data).length - 1; i >= 0; i--) {
-              new_data["id" + i] = (data["id" + i]);
+        if (ascending) {
+            for (var i = Object.keys(data).length - 1; i >= 0; i--) {
+                new_data["id" + i] = (data["id" + i]);
             }
         }
 
         // Add the new articles.
-        if(ascending) {
+        if (ascending) {
             addArticles(new_data, false);
         } else {
             addArticles(data, false);
         }
 
         // Add last.
-        if(ascending) {
+        if (ascending) {
             addLast('route');
         } else {
             addLast('white-house');
         }
 
         doClick();
-    });
+    }
 }
 
 function resetFilter(makeVisible) {
