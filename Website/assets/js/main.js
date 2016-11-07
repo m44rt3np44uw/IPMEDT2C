@@ -44,8 +44,9 @@ $(document).ready(function () {
             $('#fullpage').fullpage({
                 scrollOverflow: true,
                 normalScrollElements: '#tijdlijnSection',
+                scrollOverflowOptions: {click: false },
 
-                //voor de bovennav die tevoorschijn komt bij de tweede sectie
+                    //voor de bovennav die tevoorschijn komt bij de tweede sectie
                 onLeave: function (index, nextIndex, direction) {
 
                     //after leaving section 1
