@@ -13,30 +13,6 @@ var data = {
     },
     "id1":{
         "id": 1,
-        "date": "16-6-2015",
-        "src": "assets/video/TrumpKondigtPresidentschapAan.mp4",
-        "thumbnail": "assets/img/thumbnails/TrumpKondigtPresidentschapAan.jpg",
-        "koptext": "Ook Donald Trump wil president worden",
-        "subtext": "Donald Trump mengt zich in de strijd om het Amerikaanse presidentschap in 2016. De 69-jarige vastgoedmagnaat en tv-persoonlijkheid stelde zich kandidaat voor de Republikeinse Partij tijdens een bijeenkomst in de Trump-tower, zijn eigen wolkenkrabber op Manhattan.",
-        "from": "Trump",
-        "belangrijk": 0,
-        "kind": "video",
-        "bron": "http://nos.nl/artikel/2041767-ook-donald-trump-wil-president-worden.html"
-    },
-    "id2":{
-        "id": 2,
-        "date": "2-3-2016",
-        "src": "assets/img/SuperTuesdayUitslag.jpg",
-        "thumbnail": "",
-        "koptext": "Uitslag 'Super Tuesday'",
-        "subtext": "Op Super Tuesday, begin maart, wordt in dertien Amerikaanse staten en Amerikaans Samoa gestemd. Bij de Democraten worden 865 gedelegeerden gekozen; bij de Republikeinen zijn het er 661.",
-        "from": "Both",
-        "belangrijk": 1,
-        "kind": "image",
-        "bron": "http://nos.nl/artikel/2090101-trump-en-clinton-zijn-de-grote-winnaars-van-super-tuesday.html"
-    },
-    "id3":{
-        "id": 3,
         "date": "19-5-2015",
         "src": "assets/img/clinton/Clinton5.jpg",
         "thumbnail": "",
@@ -47,8 +23,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2036625-hillary-clinton-e-mails-moeten-snel-worden-vrijgegeven.html"
     },
-    "id4":{
-        "id": 4,
+    "id2":{
+        "id": 2,
         "date": "13-6-2015",
         "src": "assets/img/clinton/Clinton.jpg",
         "thumbnail": "",
@@ -59,8 +35,20 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2041205-hillary-clinton-belooft-te-strijden-voor-middenklasse.html"
     },
-    "id5":{
-        "id": 5,
+    "id3":{
+        "id": 3,
+        "date": "16-6-2015",
+        "src": "assets/video/TrumpKondigtPresidentschapAan.mp4",
+        "thumbnail": "assets/img/thumbnails/TrumpKondigtPresidentschapAan.jpg",
+        "koptext": "Ook Donald Trump wil president worden",
+        "subtext": "Donald Trump mengt zich in de strijd om het Amerikaanse presidentschap in 2016. De 69-jarige vastgoedmagnaat en tv-persoonlijkheid stelde zich kandidaat voor de Republikeinse Partij tijdens een bijeenkomst in de Trump-tower, zijn eigen wolkenkrabber op Manhattan.",
+        "from": "Trump",
+        "belangrijk": 0,
+        "kind": "video",
+        "bron": "http://nos.nl/artikel/2041767-ook-donald-trump-wil-president-worden.html"
+    },
+    "id4":{
+        "id": 4,
         "date": "24-7-2015",
         "src": "assets/img/clinton/Clinton3.jpg",
         "thumbnail": "",
@@ -71,8 +59,20 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2048641-toch-vertrouwelijke-informatie-op-privemail-clinton.html"
     },
-    "id6":{
-        "id": 6,
+    "id15":{
+        "id": 15,
+        "date": "08-08-2015",
+        "src": "assets/img/TrumpAdviseur.jpg",
+        "thumbnail": "",
+        "koptext": "Belangrijkste adviseur Trump neemt ontslag",
+        "subtext": "De belangrijkste adviseur van de Amerikaanse presidentskandidaat Donald Trump is opgestapt. Adviseur Roger Stone vindt dat de conservatieve boodschap van Trump verloren gaat in de commotie die hij steeds veroorzaakt door zijn controversiële uitspraken. Nu je kandidatuur deze kant opgaat, kan ik niet langer bij de campagne betrokken blijven, staat in de ontslagbrief die Stone aan Trump zou hebben gestuurd.",
+        "from": "Trump",
+        "belangrijk": 0,
+        "kind": "image",
+        "bron": "http://nos.nl/artikel/2051101-belangrijkste-adviseur-trump-neemt-ontslag.html"
+    },
+    "id5":{
+        "id": 5,
         "date": "14-10-2015",
         "src": "assets/img/clinton/Clinton&Sanders.jpg",
         "thumbnail": "",
@@ -83,8 +83,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2062997-clinton-en-sanders-voeren-boventoon-in-democratisch-debat.html"
     },
-    "id7":{
-        "id": 7,
+    "id6":{
+        "id": 6,
         "date": "17-01-2016",
         "src": "assets/img/clinton/Clinton&Sanders2.jpg",
         "thumbnail": "",
@@ -95,8 +95,20 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2081093-clinton-vs-sanders-de-strijd-wordt-harder.html"
     },
-    "id8":{
-        "id": 8,
+    "id31":{
+        "id": 31,
+        "date": "31-01-2016",
+        "src": "assets/video/TrumpDemonstreerd.mp4",
+        "thumbnail": "assets/img/thumbnails/TrumpDemonstreerd.jpg",
+        "koptext": "Trump demonstreert wat voor zooitje Washington is",
+        "subtext": "Vander Plaats is niet ongevoelig voor de onderliggende reden van Trumps populariteit. Het demonstreert wat een zooitje Washington eigenlijk is. Dat mensen bereid zijn om Trumps drie huwelijken door de vingers te zien, zijn casino’s en een stripclub. Het feit dat hij nooit God om vergeving heeft gevraagd. Of dat hij gehandicapten voor gek zet, zegt Vander Plaats.",
+        "from": "Trump",
+        "belangrijk": 0,
+        "kind": "video",
+        "bron": "http://nos.nl/video/2084012-trump-demonstreert-wat-voor-zooitje-washington-is.html"
+    },
+    "id7":{
+        "id": 7,
         "date": "2-2-2016",
         "src": "assets/img/clinton/Clinton7.jpg",
         "thumbnail": "",
@@ -106,6 +118,18 @@ var data = {
         "belangrijk": 0,
         "kind": "image",
         "bron": "http://nos.nl/artikel/2084527-hillary-clinton-wint-iowa-met-miniem-verschil.html"
+    },
+    "id8":{
+        "id": 8,
+        "date": "2-3-2016",
+        "src": "assets/img/SuperTuesdayUitslag.jpg",
+        "thumbnail": "",
+        "koptext": "Uitslag 'Super Tuesday'",
+        "subtext": "Op Super Tuesday, begin maart, wordt in dertien Amerikaanse staten en Amerikaans Samoa gestemd. Bij de Democraten worden 865 gedelegeerden gekozen; bij de Republikeinen zijn het er 661.",
+        "from": "Both",
+        "belangrijk": 1,
+        "kind": "image",
+        "bron": "http://nos.nl/artikel/2090101-trump-en-clinton-zijn-de-grote-winnaars-van-super-tuesday.html"
     },
     "id9":{
         "id": 9,
@@ -143,6 +167,18 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2107238-terug-van-weggeweest-hillary-clintons-e-mailschandaal.html"
     },
+    "id30":{
+        "id": 30,
+        "date": "26-05-2016",
+        "src": "assets/img/TrumpKandidaat.jpg",
+        "thumbnail": "",
+        "koptext": "Voldoende gedelegeerden voor Trump, nominatie nu formaliteit",
+        "subtext": "Donald Trump heeft voldoende gedelegeerden achter zich om zeker te zijn van de Republikeinse kandidatuur voor het presidentschap. Volgens een telling van persbureau AP is Trump zeker van de stemmen van 1238 gedelegeerden. Voor een meerderheid heeft hij er 1237 nodig.",
+        "from": "Trump",
+        "belangrijk": 0,
+        "kind": "image",
+        "bron": "http://nos.nl/artikel/2107397-voldoende-gedelegeerden-voor-trump-nominatie-nu-formaliteit.html"
+    },
     "id12":{
         "id": 12,
         "date": "14-06-2016",
@@ -154,6 +190,18 @@ var data = {
         "belangrijk": 1,
         "kind": "image",
         "bron": "http://nos.nl/artikel/2111172-hillary-clinton-wint-laatste-democratische-voorverkiezing.html"
+    },
+    "id17":{
+        "id": 17,
+        "date": "20-06-2016",
+        "src": "assets/img/TrumpLeider.jpg",
+        "thumbnail": "",
+        "koptext": "Donald Trump zet campagneleider aan de kant",
+        "subtext": "Donald Trump gaat niet verder met zijn campagneleider Corey Lewandowski. In een korte verklaring van de woordvoerder van Trump wordt Lewandowski bedankt voor zijn diensten, meldt The New York Times.",
+        "from": "Trump",
+        "belangrijk": 0,
+        "kind": "image",
+        "bron": "http://nos.nl/artikel/2112363-donald-trump-zet-campagneleider-aan-de-kant.html"
     },
     "id13":{
         "id": 13,
@@ -167,65 +215,53 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2117238-sanders-schaart-zich-achter-clinton-nu-ook-officieel.html"
     },
-    // "id22":{
-    //     "id": 22,
-    //     "date": "23-07-2016",
-    //     "src": "assets/img/clinton/Clinton&Kaine.jpg",
+    "id14":{
+        "id": 14,
+        "date": "13-10-2016",
+        "src": "assets/img/TrumpOntkent.jpg",
+        "thumbnail": "",
+        "koptext": "Vrouwen beschuldigen Trump van aanranding, Trump ontkent",
+        "subtext": "Twee vrouwen beweren dat ze in het verleden onzedelijk zijn betast door de Amerikaanse presidentskandidaat Donald Trump. Hij leek wel een octopus, zijn handen waren overal, zegt Jessica Leeds, een van de vrouwen, tegen de krant The New York Times.",
+        "from": "Trump",
+        "belangrijk": 0,
+        "kind": "image",
+        "bron": "http://nos.nl/artikel/2137439-vrouwen-beschuldigen-trump-van-aanranding-trump-ontkent.html"
+    },
+    "id16":{
+        "id": 16,
+        "date": "20-10-2016",
+        "src": "assets/img/TrumpZelfmoord.jpg",
+        "thumbnail": "",
+        "koptext": "'Trump pleegt politieke zelfmoord'",
+        "subtext": "Een Amerikaanse presidentskandidaat die in een officieel debat vraagtekens blijft zetten bij de eerlijkheid van de verkiezingen. Donald Trumps uitspraak vannacht dat hij nog moet zien of hij de verkiezingsuitslag accepteert, verbaast Democraten en Republikeinen. ",
+        "from": "Trump",
+        "belangrijk": 0,
+        "kind": "image",
+        "bron": "http://nos.nl/artikel/2138692-trump-pleegt-politieke-zelfmoord.html"
+    },
+    "id18":{
+         "id": 18,
+         "date": "06-11-2016",
+         "src": "assets/video/TrumpReactie.mp4",
+         "thumbnail": "assets/img/thumbnails/TrumpReactie.jpg",
+         "koptext": "Trump reactie beschuldigingen",
+         "subtext": "Allemaal valse beschuldigingen, deze vrouwen willen roem of zijn onderdeel van Hillary’s campagne.",
+         "from": "Trump",
+         "belangrijk": 0,
+         "kind": "video",
+         "bron": "http://nos.nl/video/2141628-trump-reactie-beschuldigingen.html"
+    },
+    // "id31":{
+    //     "id": 31,
+    //     "date": "31-01-2016",
+    //     "src": "assets/video/TrumpDemonstreerd.mp4",
     //     "thumbnail": "",
-    //     "koptext": "Clinton kiest Tim Kaine als running mate",
-    //     "subtext": "Hillary Clinton heeft senator Tim Kaine gekozen als running mate. De keuze voor Kaine als potentieel vice-president komt niet geheel onverwacht. Hij werd al genoemd als een van de grootste kanshebbers.",
-    //     "from": "Clinton",
+    //     "koptext": "Trump demonstreert wat voor zooitje Washington is",
+    //     "subtext": "Vander Plaats is niet ongevoelig voor de onderliggende reden van Trumps populariteit. Het demonstreert wat een zooitje Washington eigenlijk is. Dat mensen bereid zijn om Trumps drie huwelijken door de vingers te zien, zijn casino’s en een stripclub. Het feit dat hij nooit God om vergeving heeft gevraagd. Of dat hij gehandicapten voor gek zet, zegt Vander Plaats.",
+    //     "from": "Trump",
     //     "belangrijk": 0,
-    //     "kind": "image",
-    //     "bron": "http://nos.nl/artikel/2119196-clinton-kiest-tim-kaine-als-running-mate.html"
-    // },
-    // "id24":{
-    //     "id": 24,
-    //     "date": "12-08-2016",
-    //     "src": "assets/img/clinton/Clinton&Trump.jpg",
-    //     "thumbnail": "",
-    //     "koptext": "Wat willen Clinton en Trump met de economie?",
-    //     "subtext": "Donald Trump en Hillary Clinton hebben deze week hun plannen bekendgemaakt voor de Amerikaanse economie. De Republikein deed dat maandag in de industriestaat Michigan. Voor hem was het de eerste keer dat hij concreet werd over zijn plannen met Amerika. Trump wil een nieuw belastingstelsel, met belastingverlagingen voor iedereen, ook voor de rijken. Wel zei hij dat de rijken hun fair share (eerlijk aandeel) moeten betalen.",
-    //     "from": "Both",
-    //     "belangrijk": 1,
-    //     "kind": "image",
-    //     "bron": "http://nos.nl/artikel/2124902-wat-willen-clinton-en-trump-met-de-economie.html"
-    // },
-    // "id25":{
-    //     "id": 25,
-    //     "date": "02-09-2016",
-    //     "src": "assets/img/clinton/Clinton2.jpg",
-    //     "thumbnail": "",
-    //     "koptext": "Clinton vroeg nooit toestemming voor gebruik privé-mail",
-    //     "subtext": "De FBI heeft delen van verslagen gepubliceerd van gesprekken met Hillary Clinton en haar belangrijkste adviseurs over het gebruik van Clintons privé-mailadres als minister van Buitenlandse Zaken. Ze lag onder vuur, omdat dat tegen de regels is en via het adres geheime informatie is verstuurd.",
-    //     "from": "Clinton",
-    //     "belangrijk": 0,
-    //     "kind": "image",
-    //     "bron": "http://nos.nl/artikel/2129655-clinton-vroeg-nooit-toestemming-voor-gebruik-prive-mail.html"
-    // },
-    // "id26":{
-    //     "id": 26,
-    //     "date": "27-09-2016",
-    //     "src": "assets/img/Eerstedebat.jpg",
-    //     "thumbnail": "",
-    //     "koptext": "Trump en Clinton strijdlustig over belasting, veiligheid en IS",
-    //     "subtext": "Op de Hofstra University in Hempstead was afgelopen nacht het eerste debat tussen presidentskandidaten Donald Trump en Hillary Clinton. Het was een fel debat dat ruim anderhalf uur duurde.",
-    //     "from": "Both",
-    //     "belangrijk": 1,
-    //     "kind": "image",
-    //     "bron": "http://nos.nl/artikel/2134612-trump-en-clinton-strijdlustig-over-belasting-veiligheid-en-is.html"
-    // },
-    // "id28":{
-    //     "id": 28,
-    //     "date": "10-10-2016",
-    //     "src": "assets/img/Tweededebat.jpg",
-    //     "thumbnail": "",
-    //     "koptext": "Geruzie over 'Pussy'-video, celstraf, Rusland en geen hand vooraf",
-    //     "subtext": "Donald Trump en Hillary Clinton weigerden elkaar een hand te geven aan het begin van hun tweede debat en daarmee was de toon gezet. Op de Washington University in St. Louis werd flink met modder gegooid, onder meer over Trumps Pussy-video en Clintons e-mails. Ook de ontrouw van Bill Clinton kwam ter sprake.",
-    //     "from": "Both",
-    //     "belangrijk": 1,
-    //     "kind": "image",
-    //     "bron": "http://nos.nl/artikel/2136891-geruzie-over-pussy-video-celstraf-rusland-en-geen-hand-vooraf.html"
+    //     "kind": "video",
+    //     "bron": "http://nos.nl/video/2084012-trump-demonstreert-wat-voor-zooitje-washington-is.html"
     // },
     // "id30":{
     //     "id": 30,
@@ -238,5 +274,17 @@ var data = {
     //     "belangrijk": 1,
     //     "kind": "image",
     //     "bron": "http://nos.nl/artikel/2138661-trump-wil-niet-zeggen-of-hij-uitslag-verkiezingen-erkent.html"
-    // }
+    // },
+    // "id30":{
+    //     "id": 30,
+    //     "date": "20-10-2016",
+    //     "src": "assets/img/Derdedebat.jpg",
+    //     "thumbnail": "",
+    //     "koptext": "Trump wil niet zeggen of hij uitslag verkiezingen erkent",
+    //     "subtext": "Donald Trump wil voorlopig niet zeggen of hij zich zal neerleggen bij de uitslag van de Amerikaanse presidentsverkiezingen. In het derde en laatste verkiezingsdebat werd hem gevraagd of hij het verkiezingsresultaat zal aanvaarden als dat slecht voor hem uitpakt. \"Daar kan ik dan pas over oordelen. Ik houd jullie in spanning\", zei Trump.",
+    //     "from": "Both",
+    //     "belangrijk": 1,
+    //     "kind": "image",
+    //     "bron": "http://nos.nl/artikel/2138661-trump-wil-niet-zeggen-of-hij-uitslag-verkiezingen-erkent.html"
+    // },
 };
