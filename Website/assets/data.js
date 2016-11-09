@@ -59,8 +59,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2048641-toch-vertrouwelijke-informatie-op-privemail-clinton.html"
     },
-    "id15":{
-        "id": 15,
+    "id5":{
+        "id": 5,
         "date": "08-08-2015",
         "src": "assets/img/TrumpAdviseur.jpg",
         "thumbnail": "",
@@ -71,8 +71,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2051101-belangrijkste-adviseur-trump-neemt-ontslag.html"
     },
-    "id5":{
-        "id": 5,
+    "id6":{
+        "id": 6,
         "date": "14-10-2015",
         "src": "assets/img/clinton/Clinton&Sanders.jpg",
         "thumbnail": "",
@@ -83,8 +83,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2062997-clinton-en-sanders-voeren-boventoon-in-democratisch-debat.html"
     },
-    "id6":{
-        "id": 6,
+    "id7":{
+        "id": 7,
         "date": "17-01-2016",
         "src": "assets/img/clinton/Clinton&Sanders2.jpg",
         "thumbnail": "",
@@ -95,8 +95,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2081093-clinton-vs-sanders-de-strijd-wordt-harder.html"
     },
-    "id31":{
-        "id": 31,
+    "id8":{
+        "id": 8,
         "date": "31-01-2016",
         "src": "assets/video/TrumpDemonstreerd.mp4",
         "thumbnail": "assets/img/thumbnails/TrumpDemonstreerd.jpg",
@@ -107,8 +107,8 @@ var data = {
         "kind": "video",
         "bron": "http://nos.nl/video/2084012-trump-demonstreert-wat-voor-zooitje-washington-is.html"
     },
-    "id7":{
-        "id": 7,
+    "id9":{
+        "id": 9,
         "date": "2-2-2016",
         "src": "assets/img/clinton/Clinton7.jpg",
         "thumbnail": "",
@@ -119,8 +119,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2084527-hillary-clinton-wint-iowa-met-miniem-verschil.html"
     },
-    "id8":{
-        "id": 8,
+    "id10":{
+        "id": 10,
         "date": "2-3-2016",
         "src": "assets/img/SuperTuesdayUitslag.jpg",
         "thumbnail": "",
@@ -131,8 +131,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2090101-trump-en-clinton-zijn-de-grote-winnaars-van-super-tuesday.html"
     },
-    "id9":{
-        "id": 9,
+    "id11":{
+        "id": 11,
         "date": "16-03-2016",
         "src": "assets/img/Voorverkiezingen15maart.jpg",
         "thumbnail": "",
@@ -143,8 +143,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2093045-clinton-bouwt-voorsprong-op-sanders-verder-uit.html"
     },
-    "id10":{
-        "id": 10,
+    "id12":{
+        "id": 12,
         "date": "20-04-2016",
         "src": "assets/img/Voorverkiezingen19april.jpg",
         "thumbnail": "",
@@ -155,8 +155,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2100286-trump-en-clinton-winnen-in-new-york.html"
     },
-    "id11":{
-        "id": 11,
+    "id13":{
+        "id": 13,
         "date": "25-05-2016",
         "src": "assets/img/clinton/Clinton6.jpg",
         "thumbnail": "",
@@ -167,8 +167,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2107238-terug-van-weggeweest-hillary-clintons-e-mailschandaal.html"
     },
-    "id30":{
-        "id": 30,
+    "id14":{
+        "id": 14,
         "date": "26-05-2016",
         "src": "assets/img/TrumpKandidaat.jpg",
         "thumbnail": "",
@@ -179,8 +179,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2107397-voldoende-gedelegeerden-voor-trump-nominatie-nu-formaliteit.html"
     },
-    "id12":{
-        "id": 12,
+    "id15":{
+        "id": 15,
         "date": "14-06-2016",
         "src": "assets/img/Navoorverkiezingen.jpg",
         "thumbnail": "",
@@ -191,8 +191,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2111172-hillary-clinton-wint-laatste-democratische-voorverkiezing.html"
     },
-    "id17":{
-        "id": 17,
+    "id16":{
+        "id": 16,
         "date": "20-06-2016",
         "src": "assets/img/TrumpLeider.jpg",
         "thumbnail": "",
@@ -203,8 +203,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2112363-donald-trump-zet-campagneleider-aan-de-kant.html"
     },
-    "id13":{
-        "id": 13,
+    "id17":{
+        "id": 17,
         "date": "12-07-2016",
         "src": "assets/img/clinton/Sanders&Clinton.jpg",
         "thumbnail": "",
@@ -215,8 +215,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2117238-sanders-schaart-zich-achter-clinton-nu-ook-officieel.html"
     },
-    "id14":{
-        "id": 14,
+    "id18":{
+        "id": 18,
         "date": "13-10-2016",
         "src": "assets/img/TrumpOntkent.jpg",
         "thumbnail": "",
@@ -227,8 +227,8 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2137439-vrouwen-beschuldigen-trump-van-aanranding-trump-ontkent.html"
     },
-    "id16":{
-        "id": 16,
+    "id19":{
+        "id": 19,
         "date": "20-10-2016",
         "src": "assets/img/TrumpZelfmoord.jpg",
         "thumbnail": "",
@@ -239,8 +239,20 @@ var data = {
         "kind": "image",
         "bron": "http://nos.nl/artikel/2138692-trump-pleegt-politieke-zelfmoord.html"
     },
-    "id18":{
-         "id": 18,
+    "id20":{
+        "id": 20,
+        "date": "20-10-2016",
+        "src": "assets/img/Derdedebat.jpg",
+        "thumbnail": "",
+        "koptext": "Trump wil niet zeggen of hij uitslag verkiezingen erkent",
+        "subtext": "Donald Trump wil voorlopig niet zeggen of hij zich zal neerleggen bij de uitslag van de Amerikaanse presidentsverkiezingen. In het derde en laatste verkiezingsdebat werd hem gevraagd of hij het verkiezingsresultaat zal aanvaarden als dat slecht voor hem uitpakt. \"Daar kan ik dan pas over oordelen. Ik houd jullie in spanning\", zei Trump.",
+        "from": "Both",
+        "belangrijk": 1,
+        "kind": "image",
+        "bron": "http://nos.nl/artikel/2138661-trump-wil-niet-zeggen-of-hij-uitslag-verkiezingen-erkent.html"
+    },
+    "id21":{
+         "id": 21,
          "date": "06-11-2016",
          "src": "assets/video/TrumpReactie.mp4",
          "thumbnail": "assets/img/thumbnails/TrumpReactie.jpg",
@@ -250,41 +262,5 @@ var data = {
          "belangrijk": 0,
          "kind": "video",
          "bron": "http://nos.nl/video/2141628-trump-reactie-beschuldigingen.html"
-    },
-    // "id31":{
-    //     "id": 31,
-    //     "date": "31-01-2016",
-    //     "src": "assets/video/TrumpDemonstreerd.mp4",
-    //     "thumbnail": "",
-    //     "koptext": "Trump demonstreert wat voor zooitje Washington is",
-    //     "subtext": "Vander Plaats is niet ongevoelig voor de onderliggende reden van Trumps populariteit. Het demonstreert wat een zooitje Washington eigenlijk is. Dat mensen bereid zijn om Trumps drie huwelijken door de vingers te zien, zijn casino’s en een stripclub. Het feit dat hij nooit God om vergeving heeft gevraagd. Of dat hij gehandicapten voor gek zet, zegt Vander Plaats.",
-    //     "from": "Trump",
-    //     "belangrijk": 0,
-    //     "kind": "video",
-    //     "bron": "http://nos.nl/video/2084012-trump-demonstreert-wat-voor-zooitje-washington-is.html"
-    // },
-    // "id30":{
-    //     "id": 30,
-    //     "date": "20-10-2016",
-    //     "src": "assets/img/Derdedebat.jpg",
-    //     "thumbnail": "",
-    //     "koptext": "Trump wil niet zeggen of hij uitslag verkiezingen erkent",
-    //     "subtext": "Donald Trump wil voorlopig niet zeggen of hij zich zal neerleggen bij de uitslag van de Amerikaanse presidentsverkiezingen. In het derde en laatste verkiezingsdebat werd hem gevraagd of hij het verkiezingsresultaat zal aanvaarden als dat slecht voor hem uitpakt. \"Daar kan ik dan pas over oordelen. Ik houd jullie in spanning\", zei Trump.",
-    //     "from": "Both",
-    //     "belangrijk": 1,
-    //     "kind": "image",
-    //     "bron": "http://nos.nl/artikel/2138661-trump-wil-niet-zeggen-of-hij-uitslag-verkiezingen-erkent.html"
-    // },
-    // "id30":{
-    //     "id": 30,
-    //     "date": "20-10-2016",
-    //     "src": "assets/img/Derdedebat.jpg",
-    //     "thumbnail": "",
-    //     "koptext": "Trump wil niet zeggen of hij uitslag verkiezingen erkent",
-    //     "subtext": "Donald Trump wil voorlopig niet zeggen of hij zich zal neerleggen bij de uitslag van de Amerikaanse presidentsverkiezingen. In het derde en laatste verkiezingsdebat werd hem gevraagd of hij het verkiezingsresultaat zal aanvaarden als dat slecht voor hem uitpakt. \"Daar kan ik dan pas over oordelen. Ik houd jullie in spanning\", zei Trump.",
-    //     "from": "Both",
-    //     "belangrijk": 1,
-    //     "kind": "image",
-    //     "bron": "http://nos.nl/artikel/2138661-trump-wil-niet-zeggen-of-hij-uitslag-verkiezingen-erkent.html"
-    // },
+    }
 };
